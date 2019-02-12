@@ -1,0 +1,7 @@
+{
+    "version": 2,
+    "name": "liquid-center",
+    "builds": [
+        { "src": "next.config.js", "use": "@now/next" }
+    ]
+}
