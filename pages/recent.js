@@ -1,15 +1,18 @@
 import React from 'react'
-import styled from 'styled-components'
+import styled, { css } from 'styled-components'
 import Link from 'next/link'
 import Header from '../components/Header'
 
 export default () => (
   <Container>
     <Header />
-    <div>Liquid Center Home/Index.</div>
-    <Link href="/introducing_liquify">
-      <a>Introducing Liquify - A Blog Post</a>
-    </Link>
+    <div>Recent posts page, content/list of posts goes here.</div>
+    <div>[Example] Posts:</div>
+    <div>
+      <Link href="/introducing_liquify">
+        <a>Introducing Liquify - A Blog Post</a>
+      </Link>
+    </div>
   </Container>
 )
 
