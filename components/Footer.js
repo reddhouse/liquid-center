@@ -5,21 +5,11 @@ import Link from 'next/link'
 export default () => (
   <Container>
 
+    <div>Hello Footer &nbsp;</div>
+
     <NavItem>
       <Link href="/">
         <a>Home</a>
-      </Link>
-    </NavItem>
-
-    <NavItem>
-      <Link href="/recent">
-        <a>Recent</a>
-      </Link>
-    </NavItem>
-
-    <NavItem>
-      <Link href="/about">
-        <a>About</a>
       </Link>
     </NavItem>
 

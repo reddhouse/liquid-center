@@ -3,7 +3,7 @@ import styled, { css } from 'styled-components'
 import PostLayout from '../components/PostLayout'
 
 export default () => (
-  <PostLayout>
+  <PostLayout title="Liquid Center | Introducing Liquify">
     <div>Introducing Liquify... content goes here.</div>
   </PostLayout>
 )
