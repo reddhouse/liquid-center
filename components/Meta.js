@@ -16,8 +16,10 @@ export default (props) => (
           height: 100%;
           margin: 0;
           padding: 0;
+          font-family: 'Verdana', 'Geneva', sans-serif;
+          font-size: 16px;
         }
       `}
     </style>
-  </React.Fragment>  
+  </React.Fragment>
 )

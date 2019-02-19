@@ -5,23 +5,34 @@ import Link from 'next/link'
 export default () => (
   <Container>
 
-    <NavItem>
-      <Link href="/">
-        <a>Home</a>
-      </Link>
-    </NavItem>
+    <FlexFiller />
 
-    <NavItem>
-      <Link href="/recent">
-        <a>Recent</a>
-      </Link>
-    </NavItem>
+    <TitleContainer>
+      <Title>Liquid Center</Title>
+      <SubTitle>A Liquid Democracy Platform</SubTitle>
+    </TitleContainer>
 
-    <NavItem>
-      <Link href="/about">
-        <a>About</a>
-      </Link>
-    </NavItem>
+    <NavContainer>
+      <NavBar>
+        <NavItem>
+          <Link href="/" passHref>
+            <Anchor>Home</Anchor>
+          </Link>
+        </NavItem>
+
+        <NavItem>
+          <Link href="/recent" passHref>
+            <Anchor>Recent</Anchor>
+          </Link>
+        </NavItem>
+
+        <NavItem>
+          <Link href="/about" passHref>
+            <Anchor>About</Anchor>
+          </Link>
+        </NavItem>
+      </NavBar>
+    </NavContainer>
 
   </Container>
 )
@@ -30,8 +41,10 @@ export default () => (
 
 const Container = styled.div`
   flex: 0 0 auto;
+  padding: 0 4vw;
   display: flex;
-  justify-content: flex-start;
+  flex-direction: column;
+  justify-content: space-between;
 
   ${'' /* Use large image by default */}
   background-image: url("/static/l-pic.jpg");
@@ -66,6 +79,50 @@ ${'' /* When on phone, use small image, except if retina display, bump to medium
   `}
 `
 
+const FlexFiller = styled.div`
+  flex: 1 1 auto;
+`
+
+const TitleContainer = styled.div`
+  flex: 0 0 auto;
+  text-align: center;
+
+  @import url('https://fonts.googleapis.com/css?family=Montserrat');
+  font-family: 'Montserrat', sans-serif;
+`
+
+const Title = styled.div`
+  font-size: 2.25em;
+  font-weight: bold;
+  color: ${props => props.theme.color1};
+`
+
+const SubTitle = styled.div`
+  margin-top: 10px;
+  font-size: 1.25em;
+  color: ${props => props.theme.color1};
+`
+
+const NavContainer = styled.div`
+  flex: 1 1 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+`
+
+const NavBar = styled.nav`
+  display: flex;
+  justify-content: flex-start;
+  margin-bottom: 90px;
+  ${props => props.theme.media.phone`margin-bottom: 20px;`}
+  ${props => props.theme.media.tablet`margin-bottom: 20px;`}
+`
+
 const NavItem = styled.div`
   margin-right: 10px;
+`
+
+const Anchor = styled.a`
+  text-decoration: none;
+  color: ${props => props.theme.color1};
 `
