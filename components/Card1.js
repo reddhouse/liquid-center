@@ -5,8 +5,25 @@ import styled, { css } from 'styled-components'
 export default () => (
   <Link href="/introducing_liquify">
     <Container>
-      <CardImage />
-      <CardContent />
+      <ImageWrapper>
+        <StyledImage
+          srcSet="/static/xs-pic4.jpg 350w,
+                  /static/s-pic4.jpg 640w,
+                  /static/m-pic4.jpg 1024w,
+                  /static/l-pic4.jpg 1920w"
+          sizes="(max-width: 375px) 340px,
+                (max-width: 576px) 540px,
+                (max-width: 768px) 730px,
+                710px"
+          src="/static/m-pic4.jpg"
+          alt="image"
+        />
+      </ImageWrapper>
+      <CardContent>
+        Here is some content. Here is some content. Here is some content. Here is some content.
+        Here is some content. Here is some content. Here is some content. Here is some content.
+        Here is some content. Here is some content. Here is some content. Here is some content.
+      </CardContent>
     </Container>
   </Link>
 )
@@ -16,7 +33,8 @@ export default () => (
 const Container = styled.div`
   display: flex;
   flex-direction: row;
-  height: 400px;
+  min-height: 400px;
+  max-height: 400px;
   margin: 0px 20px 40px 20px;
   ${props => props.theme.media.tablet`flex-direction: column;`}
   ${props => props.theme.media.phone`flex-direction: column;`}
@@ -30,23 +48,40 @@ const Container = styled.div`
   }
 `
 
-const CardImage = styled.div`
-  flex: 1 1 auto;
+const ImageWrapper = styled.div`
+  flex: 0 1 auto;
   border-radius: 5px 0px 0px 5px;
-  ${props => props.theme.media.tablet`border-radius: 5px 5px 0px 0px;`}
-  ${props => props.theme.media.phone`border-radius: 5px 5px 0px 0px;`}
+  ${props => props.theme.media.tablet`
+    max-height: 175px;
+    border-radius: 5px 5px 0px 0px;
+  `}
+  ${props => props.theme.media.phone`
+    max-height: 175px;
+    border-radius: 5px 5px 0px 0px;
+  `}
   background-color: black;
 `
 
+const StyledImage = styled.img`
+  width: 100%;
+  height: 400px;
+  ${props => props.theme.media.tablet`height: 200px;`}
+  ${props => props.theme.media.phone`height: 200px;`}
+  object-fit: cover;
+`
+
 const CardContent = styled.div`
-  flex: 0 1 300px;
+  flex: 1 1 300px;
+  min-width: 300px;
   border-radius: 0px 5px 5px 0px;
   ${props => props.theme.media.tablet`
-    flex: 1 1 auto
+    flex: 1 1 auto;
+    min-width: inherit;
     border-radius: 0px 0px 5px 5px;
   `}
   ${props => props.theme.media.phone`
     flex: 1 1 auto;
+    min-width: inherit;
     border-radius: 0px 0px 5px 5px;
   `}
   background-color: lightgrey;
