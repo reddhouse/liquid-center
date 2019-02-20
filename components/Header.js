@@ -14,6 +14,7 @@ export default () => (
 
     <NavContainer>
       <NavBar>
+        <NavFakeMargin />
         <NavItem>
           <Link href="/" passHref>
             <Anchor>Home</Anchor>
@@ -41,7 +42,8 @@ export default () => (
 
 const Container = styled.div`
   flex: 0 0 auto;
-  padding: 0 4vw;
+  align-self: center;
+  width: 100%;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -111,11 +113,21 @@ const NavContainer = styled.div`
 `
 
 const NavBar = styled.nav`
+  width: 100%;
+  max-width: 1040px;
+  align-self: center;
   display: flex;
   justify-content: flex-start;
   margin-bottom: 90px;
-  ${props => props.theme.media.phone`margin-bottom: 20px;`}
+  ${props => props.theme.media.desktop`margin-bottom: 20px;`}
   ${props => props.theme.media.tablet`margin-bottom: 20px;`}
+  ${props => props.theme.media.phone`margin-bottom: 20px;`}
+`
+
+// Mirror the margin used in Card1 as displayed in index.js
+const NavFakeMargin = styled.div`
+  min-width: 20px;
+  max-width: 20px;
 `
 
 const NavItem = styled.div`

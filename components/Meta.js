@@ -11,11 +11,11 @@ export default (props) => (
     <style jsx global>
       {`
         body, #__next {
-          position: fixed;
           width: 100%;
           height: 100%;
           margin: 0;
           padding: 0;
+          box-sizing: border-box;
           font-family: 'Verdana', 'Geneva', sans-serif;
           font-size: 16px;
         }
@@ -23,3 +23,6 @@ export default (props) => (
     </style>
   </React.Fragment>
 )
+
+// Note, border-box forces the width and height properties to include the content,
+// padding, and border, but per usual, margin is not included.
