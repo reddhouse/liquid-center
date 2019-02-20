@@ -19,10 +19,7 @@ const Container = styled.div`
   height: 400px;
   margin: 0px 20px 40px 20px;
   ${props => props.theme.media.tablet`flex-direction: column;`}
-  ${props => props.theme.media.phone`
-    flex-direction: column;
-    height: 300px;
-  `}
+  ${props => props.theme.media.phone`flex-direction: column;`}
   cursor: pointer;
   box-shadow: rgba(39,44,49,0.06) 8px 14px 38px, rgba(39, 44, 49, 0.03) 1px 3px 8px;
   transition: all 0.4s ease;

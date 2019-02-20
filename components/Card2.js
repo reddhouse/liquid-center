@@ -14,7 +14,7 @@ export default () => (
 /***************************** Styled Components *****************************/
 
 const Container = styled.div`
-  flex: 1 0 300px;
+  flex: 1 1 300px;
   display: flex;
   flex-direction: column;
   height: 400px;
@@ -37,7 +37,7 @@ const CardImage = styled.div`
 `
 
 const CardContent = styled.div`
-  flex: 0 1 225px;
+  flex: 1 1 auto;
   border-radius: 0px 0px 5px 5px;
   background-color: lightgrey;
 `

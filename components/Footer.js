@@ -8,8 +8,8 @@ export default () => (
     <div>Hello Footer &nbsp;</div>
 
     <NavItem>
-      <Link href="/">
-        <a>Home</a>
+      <Link href="/" passHref>
+        <Anchor>Home</Anchor>
       </Link>
     </NavItem>
 
@@ -19,11 +19,18 @@ export default () => (
 /***************************** Styled Components *****************************/
 
 const Container = styled.div`
-  flex: 0 0 auto;
+  flex: 1 0 300px;
   display: flex;
   justify-content: flex-start;
+  background-color: black;
+  color: white;
 `
 
 const NavItem = styled.div`
   margin-right: 10px;
+`
+
+const Anchor = styled.a`
+  text-decoration: none;
+  color: ${props => props.theme.color1};
 `

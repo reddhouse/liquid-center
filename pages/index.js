@@ -21,11 +21,10 @@ export default () => (
           <Card2 />
           <Card2 />
         </MiddleSet>
+        <Card2 />
       </Featured>
 
-      <FlexFiller />
       <Footer />
-
     </Container>
 
   </React.Fragment>
@@ -36,6 +35,7 @@ export default () => (
 const Container = styled.div`
   display: flex;
   flex-direction: column;
+  height: 100vh;
 `
 
 const Featured = styled.div`
@@ -44,14 +44,9 @@ const Featured = styled.div`
   width: 100%;
   max-width: 1040px;
   margin-top: -70px;
-  ${props => props.theme.media.desktop`margin-top: 20px;`}
   ${props => props.theme.media.tablet`margin-top: 20px;`}
   ${props => props.theme.media.phone`margin-top: 20px;`}
   background-color: transparent;
-`
-
-const FlexFiller = styled.div`
-  flex: 1 1 auto;
 `
 
 const MiddleSet = styled.div`

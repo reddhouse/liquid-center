@@ -52,7 +52,9 @@ const Container = styled.div`
   background-image: url("/static/l-pic.jpg");
   background-position: center center;
   background-size: cover;
-  min-height: 30vh;
+  min-height: 350px;
+  ${props => props.theme.media.tablet`min-height: 300px;`}
+  ${props => props.theme.media.phone`min-height: 250px;`}
 
   ${'' /* When on tablet, use medium image, except if retina display, bump to large */}
   ${props => props.theme.media.tablet`
@@ -119,7 +121,6 @@ const NavBar = styled.nav`
   display: flex;
   justify-content: flex-start;
   margin-bottom: 90px;
-  ${props => props.theme.media.desktop`margin-bottom: 20px;`}
   ${props => props.theme.media.tablet`margin-bottom: 20px;`}
   ${props => props.theme.media.phone`margin-bottom: 20px;`}
 `
