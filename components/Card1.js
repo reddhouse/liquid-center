@@ -50,16 +50,13 @@ const Container = styled.div`
 
 const ImageWrapper = styled.div`
   flex: 1 1 auto;
-  border-radius: 5px 0px 0px 5px;
   ${props => props.theme.media.tablet`
     flex: 0 1 auto;
     max-height: 175px;
-    border-radius: 5px 5px 0px 0px;
   `}
   ${props => props.theme.media.phone`
     flex: 0 1 auto;
-    max-height: 175px;
-    border-radius: 5px 5px 0px 0px;
+    max-height: 175px:
   `}
   background-color: black;
 `
@@ -67,8 +64,15 @@ const ImageWrapper = styled.div`
 const StyledImage = styled.img`
   width: 100%;
   height: 400px;
-  ${props => props.theme.media.tablet`height: 200px;`}
-  ${props => props.theme.media.phone`height: 200px;`}
+  border-radius: 5px 0px 0px 5px;
+  ${props => props.theme.media.tablet`
+    height: 200px;
+    border-radius: 5px 5px 0px 0px;
+  `}
+  ${props => props.theme.media.phone`
+    height: 200px;
+    border-radius: 5px 5px 0px 0px;
+  `}
   object-fit: cover;
 `
 
