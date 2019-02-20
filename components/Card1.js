@@ -49,13 +49,15 @@ const Container = styled.div`
 `
 
 const ImageWrapper = styled.div`
-  flex: 0 1 auto;
+  flex: 1 1 auto;
   border-radius: 5px 0px 0px 5px;
   ${props => props.theme.media.tablet`
+    flex: 0 1 auto;
     max-height: 175px;
     border-radius: 5px 5px 0px 0px;
   `}
   ${props => props.theme.media.phone`
+    flex: 0 1 auto;
     max-height: 175px;
     border-radius: 5px 5px 0px 0px;
   `}
@@ -71,17 +73,20 @@ const StyledImage = styled.img`
 `
 
 const CardContent = styled.div`
-  flex: 1 1 300px;
+  flex: 1 1 auto;
   min-width: 300px;
+  max-width: 300px;
   border-radius: 0px 5px 5px 0px;
   ${props => props.theme.media.tablet`
     flex: 1 1 auto;
     min-width: inherit;
+    max-width: inherit;
     border-radius: 0px 0px 5px 5px;
   `}
   ${props => props.theme.media.phone`
     flex: 1 1 auto;
     min-width: inherit;
+    max-width: inherit;
     border-radius: 0px 0px 5px 5px;
   `}
   background-color: lightgrey;
