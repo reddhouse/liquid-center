@@ -2,20 +2,20 @@ import React from 'react'
 import Link from 'next/link'
 import styled, { css } from 'styled-components'
 
-export default () => (
+export default ({s, m, l, xl}) => (
   <Link href="/introducing_liquify">
     <Container>
       <ImageWrapper>
         <StyledImage
-          srcSet="/static/xs-pic4.jpg 350w,
-                  /static/s-pic4.jpg 640w,
-                  /static/m-pic4.jpg 1024w,
-                  /static/l-pic4.jpg 1920w"
+          srcSet={`${s} 640w,
+                  ${m} 1024w,
+                  ${l} 1920w,
+                  ${xl} 2000w`}
           sizes="(max-width: 375px) 340px,
                 (max-width: 576px) 540px,
                 (max-width: 768px) 730px,
                 710px"
-          src="/static/m-pic4.jpg"
+          src={`${l}`}
           alt="image"
         />
       </ImageWrapper>
@@ -56,7 +56,7 @@ const ImageWrapper = styled.div`
   `}
   ${props => props.theme.media.phone`
     flex: 0 1 auto;
-    max-height: 175px:
+    max-height: 175px;
   `}
   background-color: black;
 `

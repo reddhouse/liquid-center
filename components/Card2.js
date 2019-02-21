@@ -2,11 +2,28 @@ import React from 'react'
 import Link from 'next/link'
 import styled, { css } from 'styled-components'
 
-export default () => (
+export default ({s, m, l, xl}) => (
   <Link href="/introducing_liquify">
     <Container>
-      <CardImage />
-      <CardContent />
+      <ImageWrapper>
+        <StyledImage
+          srcSet={`${s} 640w,
+                  ${m} 1024w,
+                  ${l} 1920w,
+                  ${xl} 2000w`}
+          sizes="(max-width: 375px) 340px,
+                (max-width: 576px) 540px,
+                (max-width: 768px) 730px,
+                1000px"
+          src={`${m}`}
+          alt="image"
+        />
+      </ImageWrapper>
+      <CardContent>
+        Here is some content. Here is some content. Here is some content. Here is some content.
+        Here is some content. Here is some content. Here is some content. Here is some content.
+        Here is some content. Here is some content. Here is some content. Here is some content.
+      </CardContent>
     </Container>
   </Link>
 )
@@ -30,10 +47,18 @@ const Container = styled.div`
   }
 `
 
-const CardImage = styled.div`
-  flex: 1 1 auto;
+const ImageWrapper = styled.div`
+  flex: 0 1 auto;
+  max-height: 175px;
   border-radius: 5px 5px 0px 0px;
   background-color: black;
+`
+
+const StyledImage = styled.img`
+  width: 100%;
+  height: 200px;
+  border-radius: 5px 5px 0px 0px;
+  object-fit: cover;
 `
 
 const CardContent = styled.div`

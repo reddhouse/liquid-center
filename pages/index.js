@@ -15,13 +15,38 @@ export default () => (
       <Header />
 
       <Featured>
-        <Card1 />
+        <Card1
+          s="/static/s-pic5.webp"
+          m="/static/m-pic5.webp"
+          l="/static/l-pic5.webp"
+          xl="/static/xl-pic5.webp"
+        />
         <MiddleSet>
-          <Card2 />
-          <Card2 />
-          <Card2 />
+          <Card2
+            s="/static/s-pic4.webp"
+            m="/static/m-pic4.webp"
+            l="/static/l-pic4.webp"
+            xl="/static/xl-pic4.webp"
+          />
+          <Card2
+            s="/static/s-pic3.webp"
+            m="/static/m-pic3.webp"
+            l="/static/l-pic3.webp"
+            xl="/static/xl-pic3.webp"
+          />
+          <Card2
+            s="/static/s-pic2.webp"
+            m="/static/m-pic2.webp"
+            l="/static/l-pic2.webp"
+            xl="/static/xl-pic2.webp"
+          />
         </MiddleSet>
-        <Card2 />
+        <Card2
+          s="/static/s-pic1.webp"
+          m="/static/m-pic1.webp"
+          l="/static/l-pic1.webp"
+          xl="/static/xl-pic1.webp"
+        />
       </Featured>
 
       <Footer />
