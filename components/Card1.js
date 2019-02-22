@@ -80,6 +80,7 @@ const CardContent = styled.div`
   flex: 1 1 auto;
   min-width: 300px;
   max-width: 300px;
+  padding: 20px;
   border-radius: 0px 5px 5px 0px;
   ${props => props.theme.media.tablet`
     flex: 1 1 auto;

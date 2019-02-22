@@ -29,6 +29,10 @@ export default (props) => {
           alt="image"
         />
       </ImageWrapper>
+      <BlurEffect>
+        <BlurLeft />
+        <BlurRight />
+      </BlurEffect>
       <Featured>
         {props.children}
       </Featured>
@@ -59,23 +63,21 @@ const TitleContainer = styled.div`
 `
 
 const Published = styled.div`
+  margin-bottom: 4px;
   color: ${props => props.theme.color5};
 `
 
 const Title = styled.div`
   font-size: 2.25em;
+  ${props => props.theme.media.phone`font-size: 1.5em;`}
   font-weight: bold;
 `
 
 const ImageWrapper = styled.div`
   flex: 0 0 auto;
-  height: 800px;
-  ${props => props.theme.media.tablet`
-    height: 400px;
-  `}
-  ${props => props.theme.media.phone`
-    height: 400px;
-  `}
+  height: 600px;
+  ${props => props.theme.media.tablet`height: 400px;`}
+  ${props => props.theme.media.phone`height: 300px;`}
   background-color: black;
 `
 
@@ -85,11 +87,56 @@ const StyledImage = styled.img`
   object-fit: cover;
 `
 
-const Featured = styled.div`
-  flex: 0 0 auto;
+const BlurEffect = styled.div`
+  flex: 0 0 200px;
+  ${'' /* Center this div in the same manner as Featured. We are in a flex column,
+  and do not specify margin width, so center on cross axis. */}
   align-self: center;
   width: 100%;
   max-width: 1040px;
+
+  display: flex;
+  justify-content: space-between;
+`
+
+const BlurLeft = styled.div`
+  content: "";
+  margin: 0vw 5vw 5vw 5vw;
+  z-index: -1;
+  display: block;
+  width: 20px;
+  height: 200px;
+  background: rgba(39,44,49,0.15);
+  ${'' /* Blur effect no longer needed on phone width. Hide effect, but keep div
+  height the same since negative margins in Featured depend on this. */}
+  ${props => props.theme.media.phone`background: transparent;`}
+  filter: blur(5px);
+  transform: rotate(-5deg);
+`
+
+const BlurRight = styled.div`
+  content: "";
+  margin: 0vw 5vw 5vw 5vw;
+  z-index: -1;
+  display: block;
+  width: 20px;
+  height: 200px;
+  background: rgba(39,44,49,0.15);
+  ${props => props.theme.media.phone`background: transparent;`}
+  filter: blur(5px);
+  transform: rotate(5deg);
+`
+
+const Featured = styled.div`
+  flex: 0 0 auto;
+  ${'' /* Negative margin moves Featured up 200px to essentially hide BlurEffect
+  div, and up another 90 to place it inside of the image */}
+  margin-top: -290px;
+  ${props => props.theme.media.phone`margin-top: -200px`}
+  align-self: center;
+  width: 100%;
+  max-width: 1040px;
+  background-color: transparent;
 `
 
 const FlexFiller = styled.div`
