@@ -48,38 +48,38 @@ const Container = styled.div`
   flex-direction: column;
   justify-content: space-between;
 
-  ${'' /* Use large image by default */}
-  background-image: url("/static/l-pic6.jpg");
+${'' /* Use x-large image by default */}
+  background-image: url("/static/xl-header.jpg");
   background-position: center center;
   background-size: cover;
   background-color: black;
-  min-height: 350px;
+  min-height: 450px;
   ${props => props.theme.media.tablet`min-height: 300px;`}
   ${props => props.theme.media.phone`min-height: 250px;`}
 
   ${'' /* When on tablet, use medium image, except if retina display, bump to large */}
   ${props => props.theme.media.tablet`
-    background-image: url("/static/m-pic6.jpg");
+    background-image: url("/static/m-header.jpg");
     background-image: -webkit-image-set(
-            url("/static/m-pic6.jpg") 1x,
-            url("/static/l-pic6.jpg") 2x
+            url("/static/m-header.jpg") 1x,
+            url("/static/l-header.jpg") 2x
     );
     background-image: image-set(
-            url("/static/m-pic6.jpg") 1x,
-            url("/static/l-pic6.jpg") 2x
+            url("/static/m-header.jpg") 1x,
+            url("/static/l-header.jpg") 2x
     );
   `}
 
 ${'' /* When on phone, use small image, except if retina display, bump to medium */}
   ${props => props.theme.media.phone`
-    background-image: url("/static/s-pic6.jpg");
+    background-image: url("/static/s-header.jpg");
     background-image: -webkit-image-set(
-            url("/static/s-pic6.jpg") 1x,
-            url("/static/m-pic6.jpg") 2x
+            url("/static/s-header.jpg") 1x,
+            url("/static/m-header.jpg") 2x
     );
     background-image: image-set(
-            url("/static/s-pic6.jpg") 1x,
-            url("/static/m-pic6.jpg") 2x
+            url("/static/s-header.jpg") 1x,
+            url("/static/m-header.jpg") 2x
     );
   `}
 `
