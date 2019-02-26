@@ -7,10 +7,10 @@ export default () => (
     metaTitle="Liquid Center | Introducing Liquify"
     published="February 20, 2019"
     title="Introducing Liquify"
-    s="/static/s-pic6.jpg"
-    m="/static/m-pic6.jpg"
-    l="/static/l-pic6.jpg"
-    xl="/static/xl-pic6.jpg"
+    s="/static/s-header.jpg"
+    m="/static/m-header.jpg"
+    l="/static/l-header.jpg"
+    xl="/static/xl-header.jpg"
   >
     <Container>
       <div>Introducing Liquify... content goes here.</div>

@@ -1,42 +1,62 @@
-import React from 'react'
+import React, { useState } from 'react'
 import styled, { css } from 'styled-components'
 import Link from 'next/link'
+import Subscribe from './Subscribe'
 
-export default () => (
-  <Container>
+export default () => {
+  const [modalOpen, setModalOpen] = useState(false)
 
-    <FlexFiller />
+  return (
+    <Container>
 
-    <TitleContainer>
-      <Title>Liquid Center</Title>
-      <SubTitle>A Liquid Democracy Platform</SubTitle>
-    </TitleContainer>
+      {
+        modalOpen && <Subscribe onClose={() => setModalOpen(false)} />
+      }
 
-    <NavContainer>
-      <NavBar>
-        <NavFakeMargin />
-        <NavItem>
-          <Link href="/" passHref>
-            <Anchor>Home</Anchor>
-          </Link>
-        </NavItem>
+      <FlexFiller />
 
-        <NavItem>
-          <Link href="/recent" passHref>
-            <Anchor>Recent</Anchor>
-          </Link>
-        </NavItem>
+      <TitleContainer>
+        <Title>Liquid Center</Title>
+        <SubTitle>A Liquid Democracy Platform</SubTitle>
+      </TitleContainer>
 
-        <NavItem>
-          <Link href="/about" passHref>
-            <Anchor>About</Anchor>
-          </Link>
-        </NavItem>
-      </NavBar>
-    </NavContainer>
+      <NavColumnContainer>
+        <NavRowSubContainer>
+          <NavBarLeft>
+            <NavFakeMargin />
+            <NavItem1>
+              <Link href="/" passHref>
+                <Anchor>Home</Anchor>
+              </Link>
+            </NavItem1>
 
-  </Container>
-)
+            <NavItem1>
+              <Link href="/recent" passHref>
+                <Anchor>Recent</Anchor>
+              </Link>
+            </NavItem1>
+
+            <NavItem1>
+              <Link href="/about" passHref>
+                <Anchor>About</Anchor>
+              </Link>
+            </NavItem1>
+          </NavBarLeft>
+
+          <NavBarFiller />
+
+          <NavBarRight>
+            <NavItem2>
+              <StyledButton onClick={() => setModalOpen(true)}>Subscribe</StyledButton>
+            </NavItem2>
+            <NavFakeMargin />
+          </NavBarRight>
+        </NavRowSubContainer>
+      </NavColumnContainer>
+
+    </Container>
+  )
+}
 
 /***************************** Styled Components *****************************/
 
@@ -103,27 +123,50 @@ const Title = styled.div`
 `
 
 const SubTitle = styled.div`
-  margin-top: 10px;
+  margin: 10px 20px 0px 20px;
   font-size: 1.25em;
   color: ${props => props.theme.color1};
 `
 
-const NavContainer = styled.div`
+const NavColumnContainer = styled.div`
   flex: 1 1 auto;
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
 `
 
-const NavBar = styled.nav`
+const NavRowSubContainer = styled.div`
   width: 100%;
   max-width: 1040px;
   align-self: center;
   display: flex;
-  justify-content: flex-start;
   margin-bottom: 90px;
   ${props => props.theme.media.tablet`margin-bottom: 20px;`}
   ${props => props.theme.media.phone`margin-bottom: 20px;`}
+`
+
+const NavBarLeft = styled.nav`
+  flex: 0 1 auto;
+  display: flex;
+  justify-content: flex-start;
+`
+
+const NavBarFiller = styled.div`
+  flex: 99 99 auto;
+`
+
+const NavBarRight = styled.nav`
+  flex: 0 1 auto;
+  display: flex;
+  justify-content: flex-end;
+`
+
+const StyledButton = styled.div`
+  padding: 4px 10px;
+  border: 1px solid white;
+  border-radius: 10px;
+  line-height: 1em;
+  color: white;
 `
 
 // Mirror the margin used in Card1 as displayed in index.js
@@ -132,8 +175,12 @@ const NavFakeMargin = styled.div`
   max-width: 20px;
 `
 
-const NavItem = styled.div`
+const NavItem1 = styled.div`
   margin-right: 10px;
+`
+
+const NavItem2 = styled.div`
+
 `
 
 const Anchor = styled.a`
