@@ -42,6 +42,11 @@ const Container = styled.div`
     margin-left: 30px;
     margin-right: 30px;
   `}
+  ${'' /* Undo change above if phone media query is true. */}
+  ${props => props.theme.media.phone`
+    margin-left: 20px;
+    margin-right: 20px;
+  `}
 
   cursor: pointer;
   box-shadow: rgba(39,44,49,0.06) 8px 14px 38px, rgba(39, 44, 49, 0.03) 1px 3px 8px;

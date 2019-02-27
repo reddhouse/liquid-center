@@ -70,14 +70,8 @@ const Featured = styled.div`
   width: 100%;
   max-width: 1040px;
   margin-top: -70px;
-  ${props => props.theme.media.tablet`
-    margin-top: 20px;
-    max-width: 600px;
-  `}
-  ${props => props.theme.media.phone`
-    margin-top: 20px;
-    max-width: 500px;
-  `}
+  ${props => props.theme.media.tablet`margin-top: 20px;`}
+  ${props => props.theme.media.phone`margin-top: 20px;`}
   background-color: transparent;
 `
 
@@ -88,4 +82,9 @@ const MiddleSet = styled.div`
   the MiddleSet is a flex-wrap arrangement, so to minize gutters between Card2s,
   we need to add 10 more px to the sides of this container. */}
   margin: 0px 10px 0px 10px;
+  ${'' /* Undo change above if phone media query is true. */}
+  ${props => props.theme.media.phone`
+    margin-left: 0px;
+    margin-right: 0px;
+  `}
 `

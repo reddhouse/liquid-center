@@ -37,7 +37,11 @@ const Container = styled.div`
   max-height: 400px;
   margin: 0px 30px 40px 30px;
   ${props => props.theme.media.tablet`flex-direction: column;`}
-  ${props => props.theme.media.phone`flex-direction: column;`}
+  ${props => props.theme.media.phone`
+    flex-direction: column;
+    margin-left: 20px;
+    margin-right: 20px;
+  `}
   cursor: pointer;
   box-shadow: rgba(39,44,49,0.06) 8px 14px 38px, rgba(39, 44, 49, 0.03) 1px 3px 8px;
   ${'' /* transition: all 0.4s ease; */}
