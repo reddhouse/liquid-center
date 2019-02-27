@@ -86,7 +86,7 @@ const StyledInput = styled.input`
   min-width: 350px;
   ${props => props.theme.media.phone`min-width: 250px;`}
   padding: 14px 20px;
-  margin-bottom: 20px;
+  margin: 0px 8px 20px 8px;
   border: none;
   border-radius: 8px;
   font-size: 1.25em;
@@ -94,7 +94,7 @@ const StyledInput = styled.input`
 `
 
 const StyledButton = styled.button`
-  margin: 0px 0px 20px 15px;
+  margin: 0px 8px 20px 8px;
   padding: 14px 20px;
   outline: none;
   color: white;

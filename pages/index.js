@@ -69,8 +69,14 @@ const Featured = styled.div`
   width: 100%;
   max-width: 1040px;
   margin-top: -70px;
-  ${props => props.theme.media.tablet`margin-top: 20px;`}
-  ${props => props.theme.media.phone`margin-top: 20px;`}
+  ${props => props.theme.media.tablet`
+    margin-top: 20px;
+    max-width: 600px;
+  `}
+  ${props => props.theme.media.phone`
+    margin-top: 20px;
+    max-width: 500px;
+  `}
   background-color: transparent;
 `
 

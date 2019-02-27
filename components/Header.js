@@ -117,14 +117,18 @@ const TitleContainer = styled.div`
 `
 
 const Title = styled.div`
-  font-size: 2.25em;
+  font-size: 2.75em;
+  ${props => props.theme.media.tablet`font-size: 2.25em;`}
+  ${props => props.theme.media.phone`font-size: 2em;`}
   font-weight: bold;
   color: ${props => props.theme.color1};
 `
 
 const SubTitle = styled.div`
   margin: 10px 20px 0px 20px;
-  font-size: 1.25em;
+  font-size: 1.5em;
+  ${props => props.theme.media.tablet`font-size: 1.25em;`}
+  ${props => props.theme.media.phone`font-size: 1.25em;`}
   color: ${props => props.theme.color1};
 `
 
