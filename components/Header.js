@@ -175,8 +175,8 @@ const StyledButton = styled.div`
 
 // Mirror the margin used in Card1 as displayed in index.js
 const NavFakeMargin = styled.div`
-  min-width: 20px;
-  max-width: 20px;
+  min-width: 30px;
+  max-width: 30px;
 `
 
 const NavItem1 = styled.div`

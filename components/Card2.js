@@ -2,9 +2,9 @@ import React from 'react'
 import Link from 'next/link'
 import styled, { css } from 'styled-components'
 
-export default ({s, m, l, xl}) => (
+export default ({bigSideMargin, s, m, l, xl}) => (
   <Link href="/introducing_liquify">
-    <Container>
+    <Container bigSideMargin={bigSideMargin}>
       <ImageWrapper>
         <StyledImage
           srcSet={`${s} 640w,
@@ -36,6 +36,12 @@ const Container = styled.div`
   flex-direction: column;
   height: 400px;
   margin: 0px 20px 40px 20px;
+  ${'' /* See notes in index.js regarding alignment of cards. One Card2 is not part
+  of the MiddleSet flex-wrap container, and needs extra margin added here */}
+  ${props => props.bigSideMargin && css`
+    margin-left: 30px;
+    margin-right: 30px;
+  `}
 
   cursor: pointer;
   box-shadow: rgba(39,44,49,0.06) 8px 14px 38px, rgba(39, 44, 49, 0.03) 1px 3px 8px;

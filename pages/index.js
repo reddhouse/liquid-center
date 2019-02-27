@@ -42,6 +42,7 @@ export default () => (
           />
         </MiddleSet>
         <Card2
+          bigSideMargin
           s="/static/s-pic1.jpg"
           m="/static/m-pic1.jpg"
           l="/static/l-pic1.jpg"
@@ -83,4 +84,8 @@ const Featured = styled.div`
 const MiddleSet = styled.div`
   display: flex;
   flex-wrap: wrap;
+  ${'' /* The Featured div needs no margin since it relies on Card1's margin, but
+  the MiddleSet is a flex-wrap arrangement, so to minize gutters between Card2s,
+  we need to add 10 more px to the sides of this container. */}
+  margin: 0px 10px 0px 10px;
 `

@@ -35,7 +35,7 @@ const Container = styled.div`
   flex-direction: row;
   min-height: 400px;
   max-height: 400px;
-  margin: 0px 20px 40px 20px;
+  margin: 0px 30px 40px 30px;
   ${props => props.theme.media.tablet`flex-direction: column;`}
   ${props => props.theme.media.phone`flex-direction: column;`}
   cursor: pointer;
