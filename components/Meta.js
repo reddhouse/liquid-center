@@ -7,6 +7,7 @@ export default (props) => (
       <meta charSet="utf-8" />
       <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no" />
       <title>{props.title}</title>
+      <link rel="icon" type="image/x-icon" href="../static/favicon.ico" />
     </Head>
     <style jsx global>
       {`
