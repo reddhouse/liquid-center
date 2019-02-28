@@ -4,15 +4,33 @@ import Link from 'next/link'
 
 export default () => (
   <Container>
+    <NavBar>
 
-    <div>Hello Footer &nbsp;</div>
+      <NavFakeMargin />
+      <div>Liquid Center ©&nbsp;2019</div>
+      <FlexFiller />
 
-    <NavItem>
-      <Link href="/" passHref>
-        <Anchor>Home</Anchor>
-      </Link>
-    </NavItem>
+      <NavItem>
+        <Link href="/" passHref>
+          <Anchor>Home</Anchor>
+        </Link>
+      </NavItem>
 
+      <NavItem>
+        <Link href="/recent" passHref>
+          <Anchor>Recent</Anchor>
+        </Link>
+      </NavItem>
+
+      <NavItem>
+        <Link href="/about" passHref>
+          <Anchor>About</Anchor>
+        </Link>
+      </NavItem>
+
+      <NavFakeMargin />
+
+    </NavBar>
   </Container>
 )
 
@@ -21,9 +39,34 @@ export default () => (
 const Container = styled.div`
   flex: 1 0 300px;
   display: flex;
-  justify-content: flex-start;
+  justify-content: center;
+  padding-top: 20px;
+
+  @import url('https://fonts.googleapis.com/css?family=Montserrat');
+  font-family: 'Montserrat', sans-serif;
   background-color: black;
   color: white;
+`
+
+const NavBar = styled.nav`
+  width: 100%;
+  max-width: 1040px;
+  display: flex;
+  justify-content: flex-start;
+`
+
+// Mirror the margin used in the header
+const NavFakeMargin = styled.div`
+  min-width: 30px;
+  max-width: 30px;
+  ${props => props.theme.media.phone`
+    min-width: 20px;
+    max-width: 20px;
+  `}
+`
+
+const FlexFiller = styled.div`
+  flex: 1 1 auto;
 `
 
 const NavItem = styled.div`

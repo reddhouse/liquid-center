@@ -1,70 +1,66 @@
 import React, { useState, useLayoutEffect } from 'react'
 import styled, { css } from 'styled-components'
 
-export default ({ onClose }) => {
+export default () => {
   const [value, setValue] = useState("")
 
   function handleSubmit(e) {
     e.preventDefault()
     // Do something with firebase
     console.log("Captured Value: ", value)
-    onClose()
   }
 
   return (
-    <ModalOverlay>
-      <ModalContent>
-        <Xout onClick={onClose}><div>X</div></Xout>
-        <Title>Subscribe to Liquid&nbsp;Center</Title>
-        <Blurb>Stay up to date with articles & announcements! You can expect an email from us about once per month.</Blurb>
-        <StyledForm onSubmit={handleSubmit}>
-          <StyledInput
-            value={value}
-            placeholder={"your_email@example.com"}
-            onChange={e => setValue(e.target.value)}
-          />
-          <StyledButton type="submit">Subscribe</StyledButton>
-        </StyledForm>
-      </ModalContent>
-    </ModalOverlay>
+    <Container>
+      <FlexRowContainer>
+        <SubscribeSubContainer>
+          <Title>Subscribe to Liquid&nbsp;Center</Title>
+          <Blurb>Stay up to date with articles & announcements! You can expect an email from us about once per month.</Blurb>
+          <StyledForm onSubmit={handleSubmit}>
+            <StyledInput
+              value={value}
+              placeholder={"your_email@example.com"}
+              onChange={e => setValue(e.target.value)}
+            />
+            <StyledButton type="submit">Subscribe</StyledButton>
+          </StyledForm>
+        </SubscribeSubContainer>
+      </FlexRowContainer>
+    </Container>
   )
 }
 
 /***************************** Styled Components *****************************/
 
-const ModalOverlay = styled.div`
-  position: fixed;
-  top: 0;
-  left: 0;
-  height: 100%;
+const Container = styled.div`
+  flex: 0 0 auto;
+  align-self: center;
   width: 100%;
+  max-width: 1040px;
+`
 
+const FlexRowContainer = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: rgba(0, 0, 0, 0.75);
+  margin: 0vw 5vw 5vw 5vw;
+  background-color: ${props => props.theme.color2};
 `
 
-const ModalContent = styled.div`
+const SubscribeSubContainer = styled.div`
+  flex: 1 1 auto;
   max-width: 650px;
-  padding: 20px;
+  padding: 60px 20px;
+  ${props => props.theme.media.phone`padding: 20px 20px 0px 20px;`}
   @import url('https://fonts.googleapis.com/css?family=Montserrat');
   font-family: 'Montserrat', sans-serif;
   text-align: center;
-  color: white;
-`
-
-const Xout = styled.div`
-  display: flex;
-  justify-content: flex-end;
-  margin-right: 20px;
-  margin-bottom: 40px;
-  font-size: 3em;
 `
 
 const Title = styled.div`
   margin-bottom: 20px;
   font-size: 2.5em;
+  font-weight: bold;
 `
 
 const Blurb = styled.div`

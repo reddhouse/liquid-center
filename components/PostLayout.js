@@ -3,6 +3,7 @@ import Head from 'next/head'
 import styled, { css } from 'styled-components'
 import Meta from './Meta'
 import MiniHeader from './MiniHeader'
+import InlineSubscribe from './InlineSubscribe'
 import Footer from './Footer'
 
 export default (props) => {
@@ -37,6 +38,7 @@ export default (props) => {
         {props.children}
       </Featured>
       <FlexFiller />
+      <InlineSubscribe />
       <Footer />
     </Container>
   )

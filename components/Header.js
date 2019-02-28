@@ -129,7 +129,7 @@ const SubTitle = styled.div`
   font-size: 1.5em;
   ${props => props.theme.media.tablet`font-size: 1.25em;`}
   ${props => props.theme.media.phone`font-size: 1.25em;`}
-  color: ${props => props.theme.color1};
+  color: lightgrey;
 `
 
 const NavColumnContainer = styled.div`
