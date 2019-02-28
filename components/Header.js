@@ -177,6 +177,10 @@ const StyledButton = styled.div`
 const NavFakeMargin = styled.div`
   min-width: 30px;
   max-width: 30px;
+  ${props => props.theme.media.phone`
+    min-width: 20px;
+    max-width: 20px;
+  `}
 `
 
 const NavItem1 = styled.div`
