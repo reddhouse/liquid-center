@@ -6,7 +6,6 @@ export default () => {
 
   function handleSubmit(e) {
     e.preventDefault()
-    // Do something with firebase
     console.log("Captured Value: ", value)
   }
 
@@ -60,6 +59,7 @@ const SubscribeSubContainer = styled.div`
 const Title = styled.div`
   margin-bottom: 20px;
   font-size: 2.5em;
+  ${props => props.theme.media.phone`font-size: 2em;`}
   font-weight: bold;
 `
 

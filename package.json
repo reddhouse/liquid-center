@@ -6,6 +6,9 @@
     "now-build": "next build && next export -o dist"
   },
   "dependencies": {
+    "@firebase/app": "^0.3.9",
+    "@firebase/firestore": "^1.0.4",
+    "firebase": "^5.8.4",
     "next": "latest",
     "react": "latest",
     "react-dom": "latest",
