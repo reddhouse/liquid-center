@@ -9,6 +9,9 @@
 # production
 /.next
 
+# firebase config
+/lib/db.js
+
 # misc
 .DS_Store
 .env
