@@ -12,8 +12,6 @@ export default () => {
     addEmail(value, setSignupStatus)
   }
 
-
-
   function renderTitle() {
     switch (signupStatus) {
       case "IN_PROGRESS":
