@@ -1,29 +1,12 @@
 import React, { useState, useEffect } from 'react'
 import styled, { css } from 'styled-components'
-import { loadDB } from '../lib/db'
-
-async function addEmail(email, setSignupStatus) {
-  const db = await loadDB()
-  db.firestore().collection('signups')
-    .add({
-      email: email,
-      timestamp: db.firestore.FieldValue.serverTimestamp()
-    })
-    .then(() => {
-      setSignupStatus("SUCCEEDED")
-    })
-    .catch((error) => {
-      console.error("Error adding document: ", error)
-      setSignupStatus("FAILED")
-    })
-}
-
+import { addEmail } from '../lib/helpers.js'
 
 export default ({ onClose }) => {
   const [value, setValue] = useState("")
   const [signupStatus, setSignupStatus] = useState("NOT_ATTEMPTED") // NOT_ATTEMPTED, IN_PROGRESS, SUCCEEDED, FAILED
 
-  // Automatically close modal (after success) after short delay.
+  // Automatically close modal (after 2 seconds) if signup suceeded.
   useEffect(() => {
     if (signupStatus === "SUCCEEDED")
       setTimeout(() => onClose(), 2000)
@@ -35,42 +18,33 @@ export default ({ onClose }) => {
     addEmail(value, setSignupStatus)
   }
 
-  function renderPerStatus() {
+  function renderTitle() {
     switch (signupStatus) {
       case "IN_PROGRESS":
         return <Title>...</Title>
       case "SUCCEEDED":
         return <Title>Thanks for subscribing!</Title>
       case "FAILED":
-        return (
-          <React.Fragment>
-            <Xout onClick={onClose}><div>X</div></Xout>
-            <Title>Sorry, there was an error. Please try again.</Title>
-          </React.Fragment>
-        )
+        return <Title>Sorry, there was an error. Please try again.</Title>
       default:
-        return (
-          <React.Fragment>
-            <Xout onClick={onClose}><div>X</div></Xout>
-            <Title>Subscribe to Liquid&nbsp;Center</Title>
-            <Blurb>Stay up to date with articles & announcements! You can expect an email from us about once per month.</Blurb>
-            <StyledForm onSubmit={handleSubmit}>
-              <StyledInput
-                value={value}
-                placeholder={"your_email@example.com"}
-                onChange={e => setValue(e.target.value)}
-              />
-              <StyledButton type="submit">Subscribe</StyledButton>
-            </StyledForm>
-          </React.Fragment>
-        )
+        return <Title>Subscribe to Liquid&nbsp;Center</Title>
     }
   }
 
   return (
     <ModalOverlay>
       <ModalContent>
-        { renderPerStatus() }
+        <Xout onClick={onClose}><div>X</div></Xout>
+        { renderTitle() }
+        <Blurb signupStatus={signupStatus}>Stay up to date with articles & announcements! You can expect an email from us about once per month.</Blurb>
+        <StyledForm signupStatus={signupStatus} onSubmit={handleSubmit}>
+          <StyledInput
+            value={value}
+            placeholder={"your_email@example.com"}
+            onChange={e => setValue(e.target.value)}
+          />
+          <StyledButton type="submit">Subscribe</StyledButton>
+        </StyledForm>
       </ModalContent>
     </ModalOverlay>
   )
@@ -120,6 +94,11 @@ const Blurb = styled.div`
   ${props => props.theme.media.phone`font-size: inherit;`}
   line-height: 1.5em;
   opacity: .8;
+
+  ${'' /* No need to see this div if user has started signup process */}
+  ${props => props.signupStatus !== "NOT_ATTEMPTED" && css`
+    visibility: collapse;
+  `}
 `
 
 const StyledForm = styled.form`
@@ -127,6 +106,11 @@ const StyledForm = styled.form`
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
+
+  ${'' /* No need to see this div if user has started signup process */}
+  ${props => props.signupStatus !== "NOT_ATTEMPTED" && css`
+    visibility: collapse;
+  `}
 `
 
 const StyledInput = styled.input`
