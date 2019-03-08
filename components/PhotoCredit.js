@@ -32,7 +32,7 @@ const MiniBold = styled.div`
 `
 
 const CreditAnchor = styled.a`
- background-color: black;
+ background-color: ${props => props.theme.color5};
  color: white;
  text-decoration: none;
  padding: 4px 6px;

@@ -37,7 +37,7 @@ export default () => (
 /***************************** Styled Components *****************************/
 
 const Container = styled.div`
-  flex: 1 0 300px;
+  flex: 1 0 200px;
   display: flex;
   justify-content: center;
   padding-top: 20px;
