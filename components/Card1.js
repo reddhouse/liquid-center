@@ -98,5 +98,5 @@ const CardContent = styled.div`
     max-width: inherit;
     border-radius: 0px 0px 5px 5px;
   `}
-  background-color: lightgrey;
+  background-color: white;
 `

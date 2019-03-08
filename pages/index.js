@@ -23,10 +23,12 @@ export default () => (
         />
         <MiddleSet>
           <Card2
-            s="/static/s-pic4.jpg"
-            m="/static/m-pic4.jpg"
-            l="/static/l-pic4.jpg"
-            xl="/static/xl-pic4.jpg"
+            s="/static/s-hoops.jpg"
+            m="/static/m-hoops.jpg"
+            l="/static/l-hoops.jpg"
+            xl="/static/xl-hoops.jpg"
+            summaryTitle="Laws need expiration dates. Voters need to keep score."
+            summaryBlurb="Proposing laws that are designed to self-destruct is easy. Deciding whether or not to renew them takes careful planning."
           />
           <Card2
             s="/static/s-pic3.jpg"
@@ -62,6 +64,7 @@ const Container = styled.div`
   display: flex;
   flex-direction: column;
   height: 100%;
+  background-color: whitesmoke;
 `
 
 const Featured = styled.div`
@@ -73,6 +76,7 @@ const Featured = styled.div`
   ${props => props.theme.media.tablet`margin-top: 20px;`}
   ${props => props.theme.media.phone`margin-top: 20px;`}
   background-color: transparent;
+  font-family: Georgia, serif;
 `
 
 const MiddleSet = styled.div`

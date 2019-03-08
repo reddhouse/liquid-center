@@ -14,7 +14,11 @@ export default (props) => {
       <MiniHeader />
       <TitleContainer>
         <Published>{props.published}</Published>
-        <Title>{props.title}</Title>
+        <Title>{props.titleLine1}</Title>
+        { props.titleLine2
+          ? <Title>{props.titleLine2}</Title>
+          : <React.Fragment />
+        }
       </TitleContainer>
       <ImageWrapper>
         <StyledImage
@@ -55,17 +59,17 @@ const Container = styled.div`
 const TitleContainer = styled.div`
   flex: 0 0 auto;
   text-align: center;
-  margin: 40px 0px 40px 0px;
+  margin: 40px 30px 40px 30px;
   ${props => props.theme.media.tablet`
-    margin: 30px 0px 30px 0px;
+    margin: 30px 20px 30px 30px;
   `}
   ${props => props.theme.media.phone`
-    margin: 20px 0px 20px 0px;
+    margin: 20px 20px 20px 20px;
   `}
 `
 
 const Published = styled.div`
-  margin-bottom: 4px;
+  margin-bottom: 10px;
   color: ${props => props.theme.color5};
 `
 
@@ -77,7 +81,10 @@ const Title = styled.div`
 
 const ImageWrapper = styled.div`
   flex: 0 0 auto;
+  align-self: center;
   height: 600px;
+  width: 100%;
+  max-width: 1200px;
   ${props => props.theme.media.tablet`height: 400px;`}
   ${props => props.theme.media.phone`height: 300px;`}
   background-color: black;
@@ -103,7 +110,7 @@ const BlurEffect = styled.div`
 
 const BlurLeft = styled.div`
   content: "";
-  margin: 0vw 5vw 5vw 5vw;
+  margin: 0px 60px 0px 60px;
   z-index: -1;
   display: block;
   width: 20px;
@@ -118,7 +125,7 @@ const BlurLeft = styled.div`
 
 const BlurRight = styled.div`
   content: "";
-  margin: 0vw 5vw 5vw 5vw;
+  margin: 0px 60px 0px 60px;
   z-index: -1;
   display: block;
   width: 20px;

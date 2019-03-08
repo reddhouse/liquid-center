@@ -53,7 +53,8 @@ const NavContainer = styled.div`
 
 const NavBar = styled.nav`
   width: 100%;
-  max-width: 1040px;
+  ${'' /* max-width: 1040px; */}
+  max-width: 1200px;
   align-self: center;
   display: flex;
   justify-content: flex-start;
@@ -62,12 +63,8 @@ const NavBar = styled.nav`
 
 // Mirror the margin used in the Container displayed in individual post files.
 const NavFakeMargin = styled.div`
-  min-width: 30px;
-  max-width: 30px;
-  ${props => props.theme.media.phone`
-    min-width: 20px;
-    max-width: 20px;
-  `}
+  min-width: 20px;
+  max-width: 20px;
 `
 
 const Title = styled.div`

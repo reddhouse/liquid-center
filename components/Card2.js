@@ -2,7 +2,7 @@ import React from 'react'
 import Link from 'next/link'
 import styled, { css } from 'styled-components'
 
-export default ({bigSideMargin, s, m, l, xl}) => (
+export default ({bigSideMargin, s, m, l, xl, summaryTitle, summaryBlurb}) => (
   <Link href="/introducing_liquify">
     <Container bigSideMargin={bigSideMargin}>
       <ImageWrapper>
@@ -19,11 +19,10 @@ export default ({bigSideMargin, s, m, l, xl}) => (
           alt="image"
         />
       </ImageWrapper>
-      <CardContent>
-        Here is some content. Here is some content. Here is some content. Here is some content.
-        Here is some content. Here is some content. Here is some content. Here is some content.
-        Here is some content. Here is some content. Here is some content. Here is some content.
-      </CardContent>
+      <SummaryContainer>
+        <SummaryTitle>{summaryTitle}</SummaryTitle>
+        <SummaryBlurb>{summaryBlurb}</SummaryBlurb>
+      </SummaryContainer>
     </Container>
   </Link>
 )
@@ -72,9 +71,19 @@ const StyledImage = styled.img`
   object-fit: cover;
 `
 
-const CardContent = styled.div`
+const SummaryContainer = styled.div`
   flex: 1 1 auto;
   padding: 20px;
   border-radius: 0px 0px 5px 5px;
-  background-color: lightgrey;
+  background-color: white;
+`
+
+const SummaryTitle = styled.div`
+ font-size: 1.25em;
+ font-weight: bold;
+ margin-bottom: 20px;
+`
+
+const SummaryBlurb = styled.div`
+
 `

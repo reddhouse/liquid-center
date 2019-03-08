@@ -58,7 +58,10 @@ const FlexRowContainer = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
-  margin: 0vw 5vw 5vw 5vw;
+  margin: 0px 60px 60px 60px;
+  ${'' /* On phones, match 5vw from posts content container (padding, as margin
+  has changed to zero) */}
+  ${props => props.theme.media.phone`margin: 0px 5vw 30px 5vw;`}
   background-color: ${props => props.theme.color2};
 `
 
