@@ -3,7 +3,7 @@ import Link from 'next/link'
 import styled, { css } from 'styled-components'
 
 export default ({s, m, l, xl}) => (
-  <Link href="/introducing_liquify">
+  <Link href="/say_what">
     <Container>
       <ImageWrapper>
         <StyledImage
@@ -19,11 +19,10 @@ export default ({s, m, l, xl}) => (
           alt="image"
         />
       </ImageWrapper>
-      <CardContent>
-        Here is some content. Here is some content. Here is some content. Here is some content.
-        Here is some content. Here is some content. Here is some content. Here is some content.
-        Here is some content. Here is some content. Here is some content. Here is some content.
-      </CardContent>
+      <SummaryContainer>
+        <SummaryTitle>The moment when you realize you are your government.</SummaryTitle>
+        <SummaryBlurb>That's right. You created this mess, but everything that is done can be undone, and liquid democracy gives you the power to turn this ship around.</SummaryBlurb>
+      </SummaryContainer>
     </Container>
   </Link>
 )
@@ -80,7 +79,7 @@ const StyledImage = styled.img`
   object-fit: cover;
 `
 
-const CardContent = styled.div`
+const SummaryContainer = styled.div`
   flex: 1 1 auto;
   min-width: 300px;
   max-width: 300px;
@@ -99,4 +98,14 @@ const CardContent = styled.div`
     border-radius: 0px 0px 5px 5px;
   `}
   background-color: white;
+`
+
+const SummaryTitle = styled.div`
+ font-size: 1.25em;
+ font-weight: bold;
+ margin-bottom: 20px;
+`
+
+const SummaryBlurb = styled.div`
+
 `

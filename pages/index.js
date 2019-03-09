@@ -9,17 +9,17 @@ import Card2 from '../components/Card2'
 export default () => (
   <React.Fragment>
 
-    <Meta title="Liquid Center" />
+    <Meta title="Liquid Center" description="A Liquid Democracy Platform"/>
 
     <Container>
       <Header />
 
       <Featured>
         <Card1
-          s="/static/s-pic5.jpg"
-          m="/static/m-pic5.jpg"
-          l="/static/l-pic5.jpg"
-          xl="/static/xl-pic5.jpg"
+          s="/static/s-lemur.jpg"
+          m="/static/m-lemur.jpg"
+          l="/static/l-lemur.jpg"
+          xl="/static/xl-lemur.jpg"
         />
         <MiddleSet>
           <Card2

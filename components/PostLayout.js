@@ -10,7 +10,7 @@ export default (props) => {
   const {s, m, l, xl} = props
   return (
     <Container>
-      <Meta title={props.metaTitle} />
+      <Meta title={props.metaTitle} description={props.metaBlurb}/>
       <MiniHeader />
       <TitleContainer>
         <Published>{props.published}</Published>

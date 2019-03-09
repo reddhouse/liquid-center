@@ -10,14 +10,14 @@ export default () => (
     published="March 7, 2019"
     titleLine1="Laws need expiration dates."
     titleLine2="Voters need to keep score."
-    blurb="Proposing laws that are designed to self-destruct is easy. Deciding whether or not to renew them takes careful planning."
+    metaBlurb="Proposing laws that are designed to self-destruct is easy. Deciding whether or not to renew them takes careful planning."
     s="/static/s-hoops.jpg"
     m="/static/m-hoops.jpg"
     l="/static/l-hoops.jpg"
     xl="/static/xl-hoops.jpg"
   >
     <Container>
-      <p><FirstWord>Liquid</FirstWord> democracy allows voters (not their representatives) to decide if/when individual bills should be made into law. This can be an intimidating task, especially for citizens who don't have a lot of time to research public policy issues.</p>
+      <div><FirstWord>Liquid</FirstWord> democracy allows voters (not their representatives) to decide if/when individual bills should be made into law. This can be an intimidating task, especially for citizens who don't have a lot of time to research public policy issues.</div>
 
       <p>How can anyone be sure that a particular piece of legislation will solve the problem at hand without causing unforeseen or excess damage?</p>
 
@@ -49,7 +49,7 @@ export default () => (
 
       <p>Otherwise, as is often the case in current political discourse, arguments tend to shift towards how people “feel” about certain laws (separate of their efficacy), which party introduced them, or what agenda the review committee is trying to push, etc.</p>
 
-      <p>You can learn more about the <Link href={"/introducing_liquify"}><a>other guidelines</a></Link> that Liquid Center proposes for liquid representatives, or review the many other <Link href={"/introducing_liquify"}><a>benefits of liquid democracy</a></Link>.</p>
+      <p>You can learn more about the <Link href={"/introducing_liquify"}><a>platform guidelines</a></Link> that Liquid Center proposes for liquid representatives, or check out the many other <Link href={"/introducing_liquify"}><a>benefits of liquid democracy</a></Link>.</p>
 
       <CreditsContainer>
         <div>
