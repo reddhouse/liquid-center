@@ -14,7 +14,6 @@ export default () => (
     s="/static/s-hoops.jpg"
     m="/static/m-hoops.jpg"
     l="/static/l-hoops.jpg"
-    xl="/static/xl-hoops.jpg"
   >
     <Container>
       <div><FirstWord>Liquid</FirstWord> democracy allows voters (not their representatives) to decide if/when individual bills should be made into law. This can be an intimidating task, especially for citizens who don't have a lot of time to research public policy issues.</div>

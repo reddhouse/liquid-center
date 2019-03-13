@@ -69,7 +69,7 @@ const Container = styled.div`
   justify-content: space-between;
 
 ${'' /* Use x-large image by default */}
-  background-image: url("/static/xl-header.jpg");
+  background-image: url("/static/l-header.jpg");
   background-position: center center;
   background-size: cover;
   background-color: black;

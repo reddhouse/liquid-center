@@ -2,15 +2,14 @@ import React from 'react'
 import Link from 'next/link'
 import styled, { css } from 'styled-components'
 
-export default ({bigSideMargin, s, m, l, xl, summaryTitle, summaryBlurb}) => (
-  <Link href="/introducing_liquify">
+export default ({ bigSideMargin, s, m, l, summaryTitle, summaryBlurb, endpoint }) => (
+  <Link href={endpoint}>
     <Container bigSideMargin={bigSideMargin}>
       <ImageWrapper>
         <StyledImage
           srcSet={`${s} 640w,
                   ${m} 1024w,
-                  ${l} 1920w,
-                  ${xl} 2000w`}
+                  ${l} 2000w`}
           sizes="(max-width: 375px) 340px,
                 (max-width: 576px) 540px,
                 (max-width: 768px) 730px,

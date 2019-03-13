@@ -2,26 +2,25 @@ import React from 'react'
 import Link from 'next/link'
 import styled, { css } from 'styled-components'
 
-export default ({s, m, l, xl}) => (
+export default ({ s, m, l }) => (
   <Link href="/say_what">
     <Container>
       <ImageWrapper>
         <StyledImage
           srcSet={`${s} 640w,
                   ${m} 1024w,
-                  ${l} 1920w,
-                  ${xl} 2000w`}
+                  ${l} 2000w`}
           sizes="(max-width: 375px) 340px,
                 (max-width: 576px) 540px,
                 (max-width: 768px) 730px,
                 710px"
-          src={`${l}`}
+          src={`${m}`}
           alt="image"
         />
       </ImageWrapper>
       <SummaryContainer>
-        <SummaryTitle>The moment when you realize you are your government.</SummaryTitle>
-        <SummaryBlurb>That's right. You created this mess, but everything that is done can be undone, and liquid democracy gives you the power to turn this ship around.</SummaryBlurb>
+        <SummaryTitle>This is a headline.</SummaryTitle>
+        <SummaryBlurb>This is an article summary. You should definitely read this.</SummaryBlurb>
       </SummaryContainer>
     </Container>
   </Link>

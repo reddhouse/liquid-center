@@ -7,7 +7,7 @@ import InlineSubscribe from './InlineSubscribe'
 import Footer from './Footer'
 
 export default (props) => {
-  const {s, m, l, xl} = props
+  const { s, m, l } = props
   return (
     <Container>
       <Meta title={props.metaTitle} description={props.metaBlurb}/>
@@ -24,13 +24,12 @@ export default (props) => {
         <StyledImage
           srcSet={`${s} 640w,
                   ${m} 1024w,
-                  ${l} 1920w,
-                  ${xl} 2000w`}
+                  ${l} 2000w`}
           sizes="(max-width: 376px) 376px,
                 (max-width: 576px) 576px,
                 (max-width: 768px) 768px,
                 1000px"
-          src={`${xl}`}
+          src={`${l}`}
           alt="image"
         />
       </ImageWrapper>

@@ -14,7 +14,6 @@ export default () => (
     s="/static/s-lemur.jpg"
     m="/static/m-lemur.jpg"
     l="/static/l-lemur.jpg"
-    xl="/static/xl-lemur.jpg"
   >
     <Container>
       <p><FirstWord>Liquid</FirstWord> democracy.</p>

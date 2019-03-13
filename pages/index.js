@@ -16,39 +16,44 @@ export default () => (
 
       <Featured>
         <Card1
-          s="/static/s-lemur.jpg"
-          m="/static/m-lemur.jpg"
-          l="/static/l-lemur.jpg"
-          xl="/static/xl-lemur.jpg"
+          s="/static/s-tide.jpg"
+          m="/static/m-tide.jpg"
+          l="/static/l-tide.jpg"
         />
         <MiddleSet>
+          <Card2
+            s="/static/s-lemur.jpg"
+            m="/static/m-lemur.jpg"
+            l="/static/l-lemur.jpg"
+            summaryTitle="This is a headline."
+            summaryBlurb="This is an article summary. You should definitely read this."
+            endpoint="/introducing_liquify"
+          />
           <Card2
             s="/static/s-hoops.jpg"
             m="/static/m-hoops.jpg"
             l="/static/l-hoops.jpg"
-            xl="/static/xl-hoops.jpg"
             summaryTitle="Laws need expiration dates. Voters need to keep score."
             summaryBlurb="Proposing laws that are designed to self-destruct is easy. Deciding whether or not to renew them takes careful planning."
+            endpoint="/introducing_liquify"
           />
           <Card2
-            s="/static/s-pic3.jpg"
-            m="/static/m-pic3.jpg"
-            l="/static/l-pic3.jpg"
-            xl="/static/xl-pic3.jpg"
-          />
-          <Card2
-            s="/static/s-pic2.jpg"
-            m="/static/m-pic2.jpg"
-            l="/static/l-pic2.jpg"
-            xl="/static/xl-pic2.jpg"
+            s="/static/s-flagwall.jpg"
+            m="/static/m-flagwall.jpg"
+            l="/static/l-flagwall.jpg"
+            summaryTitle="This is a headline."
+            summaryBlurb="This is an article summary. You should definitely read this."
+            endpoint="/introducing_liquify"
           />
         </MiddleSet>
         <Card2
           bigSideMargin
-          s="/static/s-pic1.jpg"
-          m="/static/m-pic1.jpg"
-          l="/static/l-pic1.jpg"
-          xl="/static/xl-pic1.jpg"
+          s="/static/s-liquify.jpg"
+          m="/static/m-liquify.jpg"
+          l="/static/l-liquify.jpg"
+          summaryTitle="This is a headline."
+          summaryBlurb="This is an article summary. You should definitely read this."
+          endpoint="/introducing_liquify"
         />
       </Featured>
 

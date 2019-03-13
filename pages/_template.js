@@ -14,7 +14,6 @@ export default () => (
     s="/static/s-header.jpg"
     m="/static/m-header.jpg"
     l="/static/l-header.jpg"
-    xl="/static/xl-header.jpg"
   >
     <Container>
       <p><FirstWord>Liquid</FirstWord> democracy.</p>
