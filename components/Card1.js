@@ -3,7 +3,7 @@ import Link from 'next/link'
 import styled, { css } from 'styled-components'
 
 export default ({ s, m, l }) => (
-  <Link href="/say_what">
+  <Link href="/fastest_fix">
     <Container>
       <ImageWrapper>
         <StyledImage
@@ -20,7 +20,7 @@ export default ({ s, m, l }) => (
       </ImageWrapper>
       <SummaryContainer>
         <SummaryTitle>The Fastest Way to Fix Everything</SummaryTitle>
-        <SummaryBlurb>A gameplan for people who can't stand watching a few other people ruin it for the rest of us.</SummaryBlurb>
+        <SummaryBlurb>A gameplan for people who can't stand watching a few bad apples ruin it for the rest of us.</SummaryBlurb>
       </SummaryContainer>
     </Container>
   </Link>

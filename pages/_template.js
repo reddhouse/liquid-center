@@ -23,7 +23,7 @@ export default () => (
       {/* ***** Start Copy/Paste ***** */}
       <p></p>
 
-      <p><Link href={"/introducing_liquify"}><a>this is a link</a></Link></p>
+      <p><Link href={"/personality_free"}><a>this is a link</a></Link></p>
 
       <Section>Expiration Dates</Section>
       <p></p>
@@ -33,7 +33,7 @@ export default () => (
       </Indented>
       {/* ***** End Copy/Paste ***** */}
 
-      <p>You can learn more about <Link href={"/introducing_liquify"}><a>related stuff</a></Link> that is super relevant, or check out the many other <Link href={"/introducing_liquify"}><a>benefits of liquid democracy</a></Link>.</p>
+      <p>You can learn more about <Link href={"/personality_free"}><a>related stuff</a></Link> that is super relevant, or check out the many other <Link href={"/personality_free"}><a>benefits of liquid democracy</a></Link>.</p>
 
       <CreditsContainer>
         <div>

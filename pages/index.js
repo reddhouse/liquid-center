@@ -16,18 +16,18 @@ export default () => (
 
       <Featured>
         <Card1
-          s="/static/s-tide.jpg"
-          m="/static/m-tide.jpg"
-          l="/static/l-tide.jpg"
+          s="/static/s-apples.jpg"
+          m="/static/m-apples.jpg"
+          l="/static/l-apples.jpg"
         />
         <MiddleSet>
           <Card2
-            s="/static/s-lemur.jpg"
-            m="/static/m-lemur.jpg"
-            l="/static/l-lemur.jpg"
+            s="/static/s-flagwall.jpg"
+            m="/static/m-flagwall.jpg"
+            l="/static/l-flagwall.jpg"
             summaryTitle="This is a headline"
             summaryBlurb="This is an article summary. You should definitely read this."
-            endpoint="/introducing_liquify"
+            endpoint="/personality_free"
           />
           <Card2
             s="/static/s-hoops.jpg"
@@ -35,12 +35,12 @@ export default () => (
             l="/static/l-hoops.jpg"
             summaryTitle="Laws With Expiration Dates"
             summaryBlurb="Designing laws that self-destruct can yield amazing benefits, but special planning is required."
-            endpoint="/introducing_liquify"
+            endpoint="/expiration_dates"
           />
           <Card2
-            s="/static/s-flagwall.jpg"
-            m="/static/m-flagwall.jpg"
-            l="/static/l-flagwall.jpg"
+            s="/static/s-lemur.jpg"
+            m="/static/m-lemur.jpg"
+            l="/static/l-lemur.jpg"
             summaryTitle="Politicians Without Personalities"
             summaryBlurb="Why it's probably a good thing if you don't know your representatives name."
             endpoint="/personality_free"
@@ -48,12 +48,12 @@ export default () => (
         </MiddleSet>
         <Card2
           bigSideMargin
-          s="/static/s-liquify.jpg"
-          m="/static/m-liquify.jpg"
-          l="/static/l-liquify.jpg"
-          summaryTitle="This is a headline"
+          s="/static/s-tide.jpg"
+          m="/static/m-tide.jpg"
+          l="/static/l-tide.jpg"
+          summaryTitle="Liquid Democracy Requires Technology - Introducing Liquify & in.dividual"
           summaryBlurb="This is an article summary. You should definitely read this."
-          endpoint="/introducing_liquify"
+          endpoint="/personality_free"
         />
       </Featured>
 
