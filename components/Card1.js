@@ -19,8 +19,8 @@ export default ({ s, m, l }) => (
         />
       </ImageWrapper>
       <SummaryContainer>
-        <SummaryTitle>This is a headline.</SummaryTitle>
-        <SummaryBlurb>This is an article summary. You should definitely read this.</SummaryBlurb>
+        <SummaryTitle>The Fastest Way to Fix Everything</SummaryTitle>
+        <SummaryBlurb>A gameplan for people who can't stand watching a few other people ruin it for the rest of us.</SummaryBlurb>
       </SummaryContainer>
     </Container>
   </Link>

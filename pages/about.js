@@ -18,7 +18,8 @@ export default () => (
       </BlurEffect>
       <ContentContainer>
         <Content>
-          <div>About Liquid Center</div>
+          <p>About Liquid Center</p>
+          <p>This is how we enhance liquid democracy:</p>
           <br />
           <br />
           <br />

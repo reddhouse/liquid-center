@@ -25,7 +25,7 @@ export default () => (
             s="/static/s-lemur.jpg"
             m="/static/m-lemur.jpg"
             l="/static/l-lemur.jpg"
-            summaryTitle="This is a headline."
+            summaryTitle="This is a headline"
             summaryBlurb="This is an article summary. You should definitely read this."
             endpoint="/introducing_liquify"
           />
@@ -33,17 +33,17 @@ export default () => (
             s="/static/s-hoops.jpg"
             m="/static/m-hoops.jpg"
             l="/static/l-hoops.jpg"
-            summaryTitle="Laws need expiration dates. Voters need to keep score."
-            summaryBlurb="Proposing laws that are designed to self-destruct is easy. Deciding whether or not to renew them takes careful planning."
+            summaryTitle="Laws With Expiration Dates"
+            summaryBlurb="Designing laws that self-destruct can yield amazing benefits, but special planning is required."
             endpoint="/introducing_liquify"
           />
           <Card2
             s="/static/s-flagwall.jpg"
             m="/static/m-flagwall.jpg"
             l="/static/l-flagwall.jpg"
-            summaryTitle="This is a headline."
-            summaryBlurb="This is an article summary. You should definitely read this."
-            endpoint="/introducing_liquify"
+            summaryTitle="Politicians Without Personalities"
+            summaryBlurb="Why it's probably a good thing if you don't know your representatives name."
+            endpoint="/personality_free"
           />
         </MiddleSet>
         <Card2
@@ -51,7 +51,7 @@ export default () => (
           s="/static/s-liquify.jpg"
           m="/static/m-liquify.jpg"
           l="/static/l-liquify.jpg"
-          summaryTitle="This is a headline."
+          summaryTitle="This is a headline"
           summaryBlurb="This is an article summary. You should definitely read this."
           endpoint="/introducing_liquify"
         />

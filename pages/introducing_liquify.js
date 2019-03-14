@@ -8,9 +8,9 @@ export default () => (
   <PostLayout
     metaTitle="Liquid Center | Laws with Expiration Dates"
     published="March 7, 2019"
-    titleLine1="Laws need expiration dates."
-    titleLine2="Voters need to keep score."
-    metaBlurb="Proposing laws that are designed to self-destruct is easy. Deciding whether or not to renew them takes careful planning."
+    titleLine1="Making laws with expiration dates."
+    titleLine2=""
+    metaBlurb="Designing laws that self-destruct can yield amazing benefits, but special planning is required."
     s="/static/s-hoops.jpg"
     m="/static/m-hoops.jpg"
     l="/static/l-hoops.jpg"
@@ -20,35 +20,35 @@ export default () => (
 
       <p>How can anyone be sure that a particular piece of legislation will solve the problem at hand without causing unforeseen or excess damage?</p>
 
-      <p>The short answer is nobody can be sure, especially when the internet, as a primary source of information for most people, is a <Link href={"/introducing_liquify"}><a>terrible place to form opinions.</a></Link></p>
+      <p>The short answer is nobody can be sure. There are too many variables to perfectly predict outcomes, but we shouldn't let that stop us from trying to improve things.</p>
 
-      <p>It’s worth mentioning that liquid democracy does not <i>require</i> people to be involved in the lawmaking process. Liquid democracy, unlike other forms of direct democracy, gives voters the ability to <Link href={"/introducing_liquify"}><a>delegate their vote</a></Link> to someone else, perhaps to a friend or colleague who they deem to be a subject matter expert.</p>
+      <p>It should be noted that liquid democracy does not <i>require</i> people to be involved in the lawmaking process. Unlike other forms of direct democracy, liquid democracy gives voters the ability to <Link href={"/introducing_liquify"}><a>delegate their vote</a></Link> to someone else, perhaps to a friend or colleague with expertise in a certain subject.</p>
 
       <Section>Expiration Dates</Section>
 
-      <p>Going back to our original dilemma; How can we encourage citizens to reform our laws and institutions in the face of uncertainty and risk?</p>
+      <p>Going back to our original dilemma; how can we encourage citizens to take chances on legal and institutional reform in the face of uncertainty and risk?</p>
 
-      <p>One idea is to mandate that laws be passed with an expiration date. This may lessen the perceived risk, but if the larger goal is to design laws that remain relevant and effective for many years, the aim should be to renew only the best laws at the end of their "trial period".</p>
+      <p>One idea is to mandate that laws be passed with expiration dates. This may lessen the perceived risk, but if the larger goal is to design laws that remain relevant and effective for many years, the aim should be to renew only the best laws at the end of their "trial period".</p>
 
       <p>This begs another question; How can we tell if a law was a success or failure after it expires?</p>
 
       <p>Liquid Center proposes the following answer. Representatives who work within the Liquid Center framework have pledged to include the following features into every bill they introduce.</p>
 
       <Indented>
-        <div><b>Success criteria.</b> Concretely, what do voters expect this law to accomplish?</div>
-        <div><b>Expiration date.</b> How long should we test this idea? When does this law expire?</div>
-        <div><b>Review & Report.</b> Did it work? What are the rules for selecting citizens (or researchers) to rate this law's success against the original success criteria?</div>
+        <div><b>Success Criteria</b> - In quantifiable terms, what do voters expect this law to accomplish?</div>
+        <div><b>Expiration Date</b> - How long should we test this idea? When does this law expire?</div>
+        <div><b>Evaluation Guidelines</b> - Did it work? What are the rules for selecting citizens (or researchers) to rate this law's success against the original success criteria?</div>
       </Indented>
 
       <p>Since Liquid Center voters are proven to be human, and proven to only have one account (<i>authentication provided by</i> <Link href={"/introducing_liquify"}><a>in.dividual</a></Link>), representatives are able to put each of the above features to their own democratic vote. For example, the expiration date for our new law could be 1 year from now, or 5 years from now, and voters get the chance to decide that, separate of the decision to support the law in the first place.</p>
 
-      <Section>Keeping Score</Section>
+      <Section>Unbiased Reviews</Section>
 
       <p>It is imperative that the success criteria and the rules regarding how we will later judge success or failure, are determined ahead of time. This is the only way voters will be able to “score” laws in an objective manner, and see which ones should be renewed, or marked as a failed experiment.</p>
 
       <p>Otherwise, as is often the case in current political discourse, arguments tend to shift towards how people “feel” about certain laws (separate of their efficacy), which party introduced them, or what agenda the review committee is trying to push, etc.</p>
 
-      <p>You can learn more about the <Link href={"/introducing_liquify"}><a>platform guidelines</a></Link> that Liquid Center proposes for liquid representatives, or check out the many other <Link href={"/introducing_liquify"}><a>benefits of liquid democracy</a></Link>.</p>
+      <p>If you're interested in learning more, view the rest of the <Link href={"/introducing_liquify"}><a>platform guidelines</a></Link> that Liquid Center proposes for our affiliated representatives, or check out the many other <Link href={"/introducing_liquify"}><a>benefits of liquid democracy</a></Link>.</p>
 
       <CreditsContainer>
         <div>
