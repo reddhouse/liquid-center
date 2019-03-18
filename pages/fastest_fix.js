@@ -16,11 +16,15 @@ export default () => (
     l="/static/l-road.jpg"
   >
     <Container>
-      <p><FirstWord>Fixing</FirstWord> everything doesn’t mean solving everyone’s problems immediately; it means fixing the process we use to solve problems collectively.</p>
+      <p><FirstWord>Fixing</FirstWord> everything doesn’t mean solving everyone’s personal problems; it means fixing the process we use to solve problems collectively.</p>
 
-      <p>Why collectively?</p>
+      <p><i>Collectively? I'll solve my own problems, thanks.</i></p>
 
-      <p>Because you can’t solve the biggest problems alone. For example, say you needed a road from point A to point B, but you can’t afford to spend the next 25 years of your life pouring asphalt. Lucky for you, some of your neighbors also want to use this road, and there are three ways we could attempt to solve this problem en masse. </p>
+      <p>You may have heard the phrase "a rising tide lifts all boats". In today's ultra-connected, ultra-competitive economy it's probably more apt to say that "many sinking boats will destroy our harbor".</p>
+
+      <p>Today, we face institutional-level problems that are squeezing the life out of the middle and lower classes, to the detriment of the entire nation. Focusing on saving yourself is a short-sighted strategy.</p>
+
+      <p>Furthermore, the biggest problems we face are ones we can't solve alone. For example, say you needed a road from point A to point B, but you can’t afford to spend the next 25 years of your life pouring your own asphalt. Lucky for you, some of your neighbors also want to use this road, and there are three ways we could attempt to solve this problem en masse.</p>
 
       <p>We could:</p>
 
@@ -60,7 +64,7 @@ export default () => (
         <p><b>-</b> Liquid representatives don’t have the chance to be influenced by any other interests, because if the app says voters have chosen YES, they vote yes. If the app says voters have chosen NO, they vote no.</p>
       </Indented>
 
-      <p>Implementing liquid democracy requires NO existing laws to be changed, and Liquid Center is building the necessary technology for voters and liquid representatives.</p>
+      <p>Implementing liquid democracy requires NO existing laws to be changed, and Liquid Center is building the necessary technology for citizens to prioritize and fix our most pressing problems. With special interests eliminated from the lawmaking process (along with the greed and corruption which usually accompanies them), the sky is the limit to what we can accomplish.</p>
 
       <Section>What Can I Do Right Now?</Section>
 
