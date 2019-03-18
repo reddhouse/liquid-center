@@ -22,7 +22,7 @@ export default () => (
 
       <p>The short answer is nobody can be sure. There are too many variables to perfectly predict outcomes, but we shouldn't let that stop us from trying to improve things.</p>
 
-      <p>It should be noted that liquid democracy does not <i>require</i> people to be involved in the lawmaking process. Unlike other forms of direct democracy, liquid democracy gives voters the ability to <Link href={"/personality_free"}><a>delegate their vote</a></Link> to someone else, perhaps to a friend or colleague with expertise in a certain subject.</p>
+      <p>It should be noted that liquid democracy does not <i>require</i> people to be involved in the lawmaking process. Unlike other forms of direct democracy, liquid democracy gives voters the ability to <Link href={"/coming_soon"}><a>delegate their vote</a></Link> to someone else, perhaps to a friend or colleague with expertise in a certain subject.</p>
 
       <Section>Expiration Dates</Section>
 
@@ -40,7 +40,7 @@ export default () => (
         <div><b>Evaluation Guidelines</b> - Did it work? What are the rules for selecting citizens (or researchers) to rate this law's success against the original success criteria?</div>
       </Indented>
 
-      <p>Since Liquid Center voters are proven to be human, and proven to only have one account (<i>authentication provided by</i> <Link href={"/personality_free"}><a>in.dividual</a></Link>), representatives are able to put each of the above features to their own democratic vote. For example, the expiration date for our new law could be 1 year from now, or 5 years from now, and voters get the chance to decide that, separate of the decision to support the law in the first place.</p>
+      <p>Since Liquid Center voters are proven to be human, and proven to only have one account (<i>authentication provided by</i> <Link href={"/coming_soon"}><a>in.dividual</a></Link>), representatives are able to put each of the above features to their own democratic vote. For example, the expiration date for our new law could be 1 year from now, or 5 years from now, and voters get the chance to decide that, separate of the decision to support the law in the first place.</p>
 
       <Section>Unbiased Reviews</Section>
 
@@ -48,7 +48,7 @@ export default () => (
 
       <p>Otherwise, as is often the case in current political discourse, arguments tend to shift towards how people “feel” about certain laws (separate of their efficacy), which party introduced them, or what agenda the review committee is trying to push, etc.</p>
 
-      <p>If you're interested in learning more, view the rest of the <Link href={"/personality_free"}><a>platform guidelines</a></Link> that Liquid Center proposes for our affiliated representatives, or check out the many other <Link href={"/personality_free"}><a>benefits of liquid democracy</a></Link>.</p>
+      <p>If you're interested in learning more, view the rest of the <Link href={"/coming_soon"}><a>platform guidelines</a></Link> that Liquid Center proposes for our affiliated representatives, or check out the many other <Link href={"/coming_soon"}><a>benefits of liquid democracy</a></Link>.</p>
 
       <CreditsContainer>
         <div>

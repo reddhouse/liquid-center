@@ -20,7 +20,7 @@ export default ({ s, m, l }) => (
       </ImageWrapper>
       <SummaryContainer>
         <SummaryTitle>The Fastest Way to Fix Everything</SummaryTitle>
-        <SummaryBlurb>A gameplan for people who can't stand watching a few bad apples ruin it for the rest of us.</SummaryBlurb>
+        <SummaryBlurb>Too few roads, or too many; we've got an app for that. Why our lawmaking process matters, and how liquid democracy provides a much needed upgrade.</SummaryBlurb>
       </SummaryContainer>
     </Container>
   </Link>

@@ -16,18 +16,18 @@ export default () => (
 
       <Featured>
         <Card1
-          s="/static/s-apples.jpg"
-          m="/static/m-apples.jpg"
-          l="/static/l-apples.jpg"
+          s="/static/s-road.jpg"
+          m="/static/m-road.jpg"
+          l="/static/l-road.jpg"
         />
         <MiddleSet>
           <Card2
             s="/static/s-flagwall.jpg"
             m="/static/m-flagwall.jpg"
             l="/static/l-flagwall.jpg"
-            summaryTitle="This is a headline"
+            summaryTitle="Liquid Democracy in 60 Seconds"
             summaryBlurb="This is an article summary. You should definitely read this."
-            endpoint="/personality_free"
+            endpoint="/coming_soon"
           />
           <Card2
             s="/static/s-hoops.jpg"
@@ -53,7 +53,7 @@ export default () => (
           l="/static/l-tide.jpg"
           summaryTitle="Liquid Democracy Requires Technology - Introducing Liquify & in.dividual"
           summaryBlurb="This is an article summary. You should definitely read this."
-          endpoint="/personality_free"
+          endpoint="/coming_soon"
         />
       </Featured>
 

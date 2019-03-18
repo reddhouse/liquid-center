@@ -20,7 +20,7 @@ export default () => (
 
       <Section>Brands are Expensive</Section>
 
-      <p>"No personalities" is a bit of stretch. The wonderful group of representatives who have pledged to embrace the Liquid Center platform are obviously intelligent, charismatic folks. Many even have quite charming personalities, but on the job, you might mistake them for robots. They serve to advance no agendas, except those which are <Link href={"/personality_free"}><a>directly communicated by individual voters</a></Link>, and it's perfectly okay to forget their name after election day.</p>
+      <p>"No personalities" is a bit of stretch. The wonderful group of representatives who have pledged to embrace the Liquid Center platform are obviously intelligent, charismatic folks. Many even have quite charming personalities, but on the job, you might mistake them for robots. They serve to advance no agendas, except those which are <Link href={"/coming_soon"}><a>directly communicated by individual voters</a></Link>, and it's perfectly okay to forget their name after election day.</p>
 
       <p>Contrast that to the politicians you can name off the top of your head. Likely, they fought long and hard to earn the name recognition, but with today's (non-liquid) lawmakers spending as much as 70% of their time fundraising, it makes you wonder if too much time is being devoted to brand promotion.</p>
 
@@ -30,9 +30,9 @@ export default () => (
 
       <p>In the past, we needed our representatives to have likable personalities to "win friends across the aisle" and negotiate deals. Conversely, we might elect a combative personality who could "wage war on the opposition" and earn a victory for their constituents.</p>
 
-      <p>Today, with the ability to <Link href={"/personality_free"}><a>identify real people online</a></Link>, and to tally and communicate voter preferences in real time, we can figure out in advance the most widely supported course of action, and rely on our representative to do just one job. Check the app, place a vote.</p>
+      <p>Today, with the ability to <Link href={"/coming_soon"}><a>identify real people online</a></Link>, and to tally and communicate voter preferences in real time, we can figure out in advance the most widely supported course of action, and rely on our representative to do just one job. Check the app, place a vote.</p>
 
-      <p>To be fair, "one job" doesn't tell the whole story. Liquid Center requires our affiliated representatives to meet <Link href={"/personality_free"}><a>several other conditions</a></Link>, but the main point, is that it becomes immediately obvious how well a representative is performing their liquid duty, because you only need to track one metric: <b>Voted as instructed? Yes/No.</b></p>
+      <p>To be fair, "one job" doesn't tell the whole story. Liquid Center requires our affiliated representatives to meet <Link href={"/coming_soon"}><a>several other conditions</a></Link>, but the main point, is that it becomes immediately obvious how well a representative is performing their liquid duty, because you only need to track one metric: <b>Voted as instructed? Yes/No.</b></p>
 
       <p>If your district indicated YES, on HR1234, and your representative voted NO, that's it; they're out. Liquid Center representatives have pledged to immediately resign from their position in office if they contradict the objective, quantified will of the voters.</p>
 
@@ -42,7 +42,7 @@ export default () => (
 
       <p>Luckily, there a growing number of lawmakers who have pledged to set aside their personal preferences and agendas in order to prioritize what the American people want accomplished, and to vote <i>exactly</i> as their constituents indicate on each and every law that comes across their desk.</p>
 
-      <p>If liquid democracy is a new concept to you, please take a moment to read why we think it's <Link href={"/personality_free"}><a>the fastest way to fix everything</a></Link>. You can also learn about Liquid Center's mission to promote and enhance liquid democracy on our <Link href={"/about"}><a>about us</a></Link> page.</p>
+      <p>If liquid democracy is a new concept to you, please take a moment to read why we think it's <Link href={"/coming_soon"}><a>the fastest way to fix everything</a></Link>. You can also learn about Liquid Center's mission to promote and enhance liquid democracy on our <Link href={"/about"}><a>about us</a></Link> page.</p>
 
       <CreditsContainer>
         <div>

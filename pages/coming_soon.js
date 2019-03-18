@@ -6,34 +6,19 @@ import PhotoCredit from '../components/PhotoCredit'
 
 export default () => (
   <PostLayout
-    metaTitle="Liquid Center | A Liquid Democracy Platform"
-    published="March 10, 2019"
-    titleLine1=""
+    metaTitle="Liquid Center | Coming Soon"
+    published=""
+    titleLine1="Coming Soon"
     titleLine2=""
     metaBlurb=""
-    s="/static/s-header.jpg"
-    m="/static/m-header.jpg"
-    l="/static/l-header.jpg"
+    s="/static/s-lemur.jpg"
+    m="/static/m-lemur.jpg"
+    l="/static/l-lemur.jpg"
   >
     <Container>
-      <p><FirstWord>Liquid</FirstWord> democracy.</p>
+      <p><FirstWord>So</FirstWord> many articles to write, so little time...</p>
 
-      <p></p>
-
-      {/* ***** Start Copy/Paste ***** */}
-      <p></p>
-
-      <p><Link href={"/coming_soon"}><a>this is a link</a></Link></p>
-
-      <Section>Expiration Dates</Section>
-      <p></p>
-
-      <Indented>
-        <div></div>
-      </Indented>
-      {/* ***** End Copy/Paste ***** */}
-
-      <p>You can learn more about <Link href={"/coming_soon"}><a>related stuff</a></Link> that is super relevant, or check out the many other <Link href={"/coming_soon"}><a>benefits of liquid democracy</a></Link>.</p>
+      <p>Please check back in a few days.</p>
 
       <CreditsContainer>
         <div>
@@ -41,8 +26,8 @@ export default () => (
           <Author>Justin Tuttle</Author>
         </div>
         <PhotoCredit
-          author="Element5 Digital"
-          link="https://unsplash.com/@element5digital?utm_medium=referral&amp;utm_campaign=photographer-credit&amp;utm_content=creditBadge"
+          author="Roi Dimor"
+          link="https://unsplash.com/@roi_dimor?utm_medium=referral&amp;utm_campaign=photographer-credit&amp;utm_content=creditBadge"
         />
       </CreditsContainer>
     </Container>

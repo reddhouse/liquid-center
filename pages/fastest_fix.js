@@ -8,32 +8,67 @@ export default () => (
   <PostLayout
     metaTitle="Liquid Center | The Fastest Way to Fix Everything"
     published="March 10, 2019"
-    titleLine1="The Fastest Way to Fix Everything."
+    titleLine1="The Fastest Way to Fix Everything"
     titleLine2=""
-    metaBlurb=""
-    s="/static/s-apples.jpg"
-    m="/static/m-apples.jpg"
-    l="/static/l-apples.jpg"
+    metaBlurb="Why our lawmaking process matters, and how liquid democracy provides a much needed upgrade."
+    s="/static/s-road.jpg"
+    m="/static/m-road.jpg"
+    l="/static/l-road.jpg"
   >
     <Container>
-      <p><FirstWord>Liquid</FirstWord> democracy.</p>
+      <p><FirstWord>Fixing</FirstWord> everything doesn’t mean solving everyone’s problems immediately; it means fixing the process we use to solve problems collectively.</p>
 
-      <p></p>
+      <p>Why collectively?</p>
 
-      {/* ***** Start Copy/Paste ***** */}
-      <p></p>
+      <p>Because you can’t solve the biggest problems alone. For example, say you needed a road from point A to point B, but you can’t afford to spend the next 25 years of your life pouring asphalt. Lucky for you, some of your neighbors also want to use this road, and there are three ways we could attempt to solve this problem en masse. </p>
 
-      <p><Link href={"/personality_free"}><a>this is a link</a></Link></p>
-
-      <Section>Expiration Dates</Section>
-      <p></p>
+      <p>We could:</p>
 
       <Indented>
-        <div></div>
+        <div>1. All swing a pickaxes on Saturday (pool our labor).</div>
+        <div>2. Contribute to the RoadzCo Kickstarter campaign (pool our money in a private enterprise).</div>
+        <div>3. Form the NRBA - National Road Building Administration (pool our money/tax dollars in a public enterprise).</div>
+        <br />
       </Indented>
-      {/* ***** End Copy/Paste ***** */}
 
-      <p>You can learn more about <Link href={"/personality_free"}><a>related stuff</a></Link> that is super relevant, or check out the many other <Link href={"/personality_free"}><a>benefits of liquid democracy</a></Link>.</p>
+      <Section>What's the Process?</Section>
+
+      <p>In the above example, the process for pooling our labor is exactly like it sounds, but we can ignore this method because realistically, people are too busy to coordinate in this manner.</p>
+
+      <p>The process of pooling money in a private enterprise is very common, and the United States leads the world in terms of number of companies formed, and amount of productivity generated. However, this method can have some consequences, such as RoadzCo deciding it wants to bulldoze a new road through your back yard...</p>
+
+      <p>Which is good segue to the last example we used; the National Road Building Administration, because the process of keeping RoadzCo from running rampant, is the same process that we use to create and manage the NRBA. I’m referring of course to the lawmaking process, which happens to be seriously broken at the moment.</p>
+
+      <Section>Why is Lawmaking Broken?</Section>
+
+      <p>With a final reference to our trivial example, let’s pretend again that we’ve finished building roads, at least, it seems to the average citizen that we have plenty of them. However, a few folks are not too happy that road building is coming to an end. </p>
+
+      <p>RoadzCo has shareholders who have been getting rich from their initial investments, the National Road Building Administration has grown to a nice healthy 625,000 employees, and dozens of other related businesses like bulldozer manufacturers and line painters, stand to lose a lot of money.</p>
+
+      <p>When all of these groups decide to get together to convince congress to slow down the end of road building, they form an extremely powerful lobby.</p>
+
+      <p>This is the story of <b>special interests</b> vs <b>the people's interests</b>, and it’s the main challenge we face with our lawmaking process in 2019. Special interests wield extreme influence in shaping not only the language/content of the actual policies we enact, but also the political parties, election district boundaries, and entire process of electing the people who ultimately end up drafting and passing new laws.</p>
+
+      <Section>How Do We Fix It?</Section>
+
+      <p>The fastest way to eliminate special interest influence in congress is to take control over both the congressional agenda, and the representatives who decide what becomes law, and what doesn’t.</p>
+
+      <p>More specifically, we need to elect lawmakers who run on a liquid democracy platform such as Liquid Center. You can read a quick summary of liquid democracy here, but as it relates to fixing everything as fast as possible, this simply means:</p>
+
+      <Indented>
+        <p><b>-</b> Voters use an app to rank their priorities (controlling the agenda), and vote yes/no on every piece of legislation that comes across their representative’s desk (to decide what becomes law).</p>
+        <p><b>-</b> Liquid representatives don’t have the chance to be influenced by any other interests, because if the app says voters have chosen YES, they vote yes. If the app says voters have chosen NO, they vote no.</p>
+      </Indented>
+
+      <Section>What Can I Do Right Now?</Section>
+
+      <p>Check to see if you have a liquid representative running for office <Link href={"/coming_soon"}><a>in your district</a></Link>.</p>
+
+      <p>If you do, share one of the many <Link href={"/coming_soon"}><a>Liquid Center articles</a></Link> with your friends and family to let them know that liquid democracy is the real deal, and the liquid representative will need their vote in the upcoming elections.</p>
+
+      <p>If you don’t have a liquid representative in your district, consider running for office yourself. Liquid democracy is <Link href={"/coming_soon"}><a>not politics as usual</a></Link>. Or, tell your unemployed friends to take the <Link href={"/coming_soon"}><a>$348,000 (2-year) Challenge</a></Link>.</p>
+
+      <p>Finally, you can see who we are, and learn more about the enhancements Liquid Center makes to liquid democracy by clicking <Link href={"/about"}><a>here</a></Link>, and be sure to subscribe to Liquid Center below to keep track of our progress.</p>
 
       <CreditsContainer>
         <div>
@@ -41,8 +76,8 @@ export default () => (
           <Author>Justin Tuttle</Author>
         </div>
         <PhotoCredit
-          author="Roi Dimor"
-          link="https://unsplash.com/@roi_dimor?utm_medium=referral&amp;utm_campaign=photographer-credit&amp;utm_content=creditBadge"
+          author="Joey Kyber"
+          link="https://unsplash.com/@jtkyber1?utm_medium=referral&amp;utm_campaign=photographer-credit&amp;utm_content=creditBadge"
         />
       </CreditsContainer>
     </Container>
