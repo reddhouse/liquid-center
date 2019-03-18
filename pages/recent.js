@@ -7,16 +7,16 @@ import Header from '../components/Header'
 import Footer from '../components/Footer'
 
 const posts = [
-  { title: "Introducing Liquify - A Blog Post 1", href: "/personality_free" },
-  { title: "Introducing Liquify - A Blog Post 2", href: "/personality_free" },
-  { title: "Introducing Liquify - A Blog Post 3", href: "/personality_free" },
-  { title: "Introducing Liquify - A Blog Post 4", href: "/personality_free" },
-  { title: "Introducing Liquify - A Blog Post 5", href: "/personality_free" },
-  { title: "Introducing Liquify - A Blog Post 6", href: "/personality_free" },
-  { title: "Introducing Liquify - A Blog Post 7", href: "/personality_free" },
-  { title: "Introducing Liquify - A Blog Post 8", href: "/personality_free" },
-  { title: "Introducing Liquify - A Blog Post 9", href: "/personality_free" },
-  { title: "Introducing Liquify - A Blog Post 10", href: "/personality_free" }
+  { title: "Introducing Liquify - A Blog Post 1", href: "/coming_soon" },
+  { title: "Introducing Liquify - A Blog Post 2", href: "/coming_soon" },
+  { title: "Introducing Liquify - A Blog Post 3", href: "/coming_soon" },
+  { title: "Introducing Liquify - A Blog Post 4", href: "/coming_soon" },
+  { title: "Introducing Liquify - A Blog Post 5", href: "/coming_soon" },
+  { title: "Introducing Liquify - A Blog Post 6", href: "/coming_soon" },
+  { title: "Introducing Liquify - A Blog Post 7", href: "/coming_soon" },
+  { title: "Introducing Liquify - A Blog Post 8", href: "/coming_soon" },
+  { title: "Introducing Liquify - A Blog Post 9", href: "/coming_soon" },
+  { title: "Introducing Liquify - A Blog Post 10", href: "/coming_soon" }
 ]
 
 const renderRows = () => posts.map((post) => (
@@ -40,9 +40,8 @@ export default () => (
       </BlurEffect>
       <ContentContainer>
         <Content>
-          <div>Recent posts page, content/list of posts goes here.</div>
-          <div>[Example] Posts:</div>
-
+          <div>Recent posts page. List of posts goes here.</div>
+          <br />
           { renderRows() }
 
         </Content>

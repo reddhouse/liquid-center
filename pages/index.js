@@ -42,7 +42,7 @@ export default () => (
             m="/static/m-lemur.jpg"
             l="/static/l-lemur.jpg"
             summaryTitle="Politicians Without Personalities"
-            summaryBlurb="Why it's probably a good thing if you don't know your representatives name."
+            summaryBlurb="Why it's probably a good thing if you don't know your representatives' names."
             endpoint="/personality_free"
           />
         </MiddleSet>

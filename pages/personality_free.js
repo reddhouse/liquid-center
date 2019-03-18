@@ -36,13 +36,13 @@ export default () => (
 
       <p>If your district indicated YES, on HR1234, and your representative voted NO, that's it; they're out. Liquid Center representatives have pledged to immediately resign from their position in office if they contradict the objective, quantified will of the voters.</p>
 
-      <Section></Section>
+      <Section>Simply Represent</Section>
 
       <p>Your representative is not an actor or salesperson. Politicians who serve in executive roles may still need to leverage strong personalities to lead their employees or departments, but representatives simply need to represent.</p>
 
       <p>Luckily, there a growing number of lawmakers who have pledged to set aside their personal preferences and agendas in order to prioritize what the American people want accomplished, and to vote <i>exactly</i> as their constituents indicate on each and every law that comes across their desk.</p>
 
-      <p>If liquid democracy is a new concept to you, please take a moment to read why we think it's <Link href={"/coming_soon"}><a>the fastest way to fix everything</a></Link>. You can also learn about Liquid Center's mission to promote and enhance liquid democracy on our <Link href={"/about"}><a>about us</a></Link> page.</p>
+      <p>If liquid democracy is a new concept to you, please take a moment to read why we think it's <Link href={"/fastest_fix"}><a>the fastest way to fix everything</a></Link>. You can also learn about Liquid Center's mission to promote and enhance liquid democracy on our <Link href={"/about"}><a>about us</a></Link> page.</p>
 
       <CreditsContainer>
         <div>
