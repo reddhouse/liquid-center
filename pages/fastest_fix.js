@@ -72,9 +72,11 @@ export default () => (
 
       <p>If you do, share one of the many <Link href={"/coming_soon"}><a>Liquid Center articles</a></Link> with your friends and family to let them know that liquid democracy is the real deal, and their liquid representative will need their vote in the upcoming elections.</p>
 
-      <p>If you don’t have a liquid representative in your district, consider running for office yourself. Liquid democracy is <Link href={"/coming_soon"}><a>not politics as usual</a></Link>. Or, tell your unemployed friends to take the <Link href={"/coming_soon"}><a>$348,000 (2-year) Challenge</a></Link>.</p>
+      <p>If you don’t have a liquid representative in your district, reach out to your existing lawmaker (or prospective candidate) and ask them to adopt a liquid democracy platform such as Liquid Center.</p>
 
-      <p>Finally, you can see who we are, and learn more about the enhancements Liquid Center makes to liquid democracy by clicking <Link href={"/about"}><a>here</a></Link>. Be sure to subscribe to Liquid Center below to keep track of our progress.</p>
+      <p>You can also consider running for office yourself! Liquid politics are <Link href={"/coming_soon"}><a>definitely NOT politics as usual</a></Link>, and you or your friends or family members might be persuaded by the <Link href={"/coming_soon"}><a>$348,000 (2-year) Challenge</a></Link>.</p>
+
+      <p>If you're interested in learning more about Liquid Center, and the enhancements we make to liquid democracy, <Link href={"/about"}><a> click here</a></Link>, and be sure to subscribe to Liquid Center below to keep track of our progress.</p>
 
       <CreditsContainer>
         <div>

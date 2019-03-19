@@ -26,8 +26,8 @@ export default () => (
             m="/static/m-flagwall.jpg"
             l="/static/l-flagwall.jpg"
             summaryTitle="Liquid Democracy in 60 Seconds"
-            summaryBlurb="This is an article summary. You should definitely read this."
-            endpoint="/coming_soon"
+            summaryBlurb="Liquid democracy is a new way for citizens to participate in the lawmaking process, and exercise control over their government."
+            endpoint="/liquid_democracy"
           />
           <Card2
             s="/static/s-hoops.jpg"

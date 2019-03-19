@@ -23,7 +23,7 @@ export default () => (
       {/* ***** Start Copy/Paste ***** */}
       <p></p>
 
-      <p><Link href={"/coming_soon"}><a>this is a link</a></Link></p>
+      <Link href={"/coming_soon"}><a>this is a link</a></Link>
 
       <Section>Expiration Dates</Section>
       <p></p>
