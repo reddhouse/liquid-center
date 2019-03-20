@@ -16,15 +16,15 @@ export default () => (
     l="/static/l-road.jpg"
   >
     <Container>
-      <p><FirstWord>Fixing</FirstWord> everything doesn’t mean solving everyone’s personal problems; it means fixing the process we use to solve problems collectively.</p>
+      <p><FirstWord>The</FirstWord> fastest way to fix everything is to upgrade the process we use to solve problems collectively.</p>
 
       <p><i>Collectively? I'll solve my own problems, thanks.</i></p>
 
-      <p>You may have heard the phrase "a rising tide lifts all boats". In today's ultra-connected, ultra-competitive economy it's probably more apt to say that "many sinking boats will destroy our harbor".</p>
+      <p>You may have heard the phrase "a rising tide lifts all boats", but in our ultra-connected, ultra-competitive economy it may be more apt to say "many sinking boats will destroy our harbor".</p>
 
-      <p>Today, we face institutional-level problems that are squeezing the life out of the middle and lower classes, to the detriment of the entire nation. Focusing on saving yourself is a short-sighted strategy.</p>
+      <p>Today, we face institutional-level problems which threaten our way of life, and our wellbeing. Focusing on saving yourself is a short-sighted strategy, and the biggest problems we face, can't be solved individually anyway.</p>
 
-      <p>Furthermore, the biggest problems we face are ones we can't solve alone. For example, say you needed a road from point A to point B, but you can’t afford to spend the next 25 years of your life pouring your own asphalt. Lucky for you, some of your neighbors also want to use this road, and there are three ways we could attempt to solve this problem en masse.</p>
+      <p>For example, say you needed a road from point A to point B, but you can’t afford to spend the next 25 years of your life pouring your own asphalt. Lucky for you, some of your neighbors also want to use this road, and there are three ways we could attempt to solve this problem en masse.</p>
 
       <p>We could:</p>
 
@@ -57,7 +57,7 @@ export default () => (
 
       <p>The fastest way to eliminate special interest influence in congress is to take control over both the congressional agenda, and the representatives who decide what becomes law, and what doesn’t.</p>
 
-      <p>More specifically, we need to elect lawmakers who run on a liquid democracy platform such as Liquid Center. You can read a quick summary of liquid democracy <Link href={"/coming_soon"}><a>here</a></Link>, but as it relates to fixing everything as fast as possible, this simply means:</p>
+      <p>More specifically, we need to elect lawmakers who run on a liquid democracy platform such as Liquid Center. You can read a quick summary of liquid democracy <Link href={"/liquid_democracy"}><a>here</a></Link>, but as it relates to fixing everything as fast as possible, this simply means:</p>
 
       <Indented>
         <p><b>-</b> Voters use an app to rank their priorities (controlling the agenda), and vote yes/no on every piece of legislation that comes across their representative’s desk (to decide what becomes law).</p>
@@ -70,7 +70,7 @@ export default () => (
 
       <p>Check to see if you have a liquid representative running for office <Link href={"/coming_soon"}><a>in your district</a></Link>.</p>
 
-      <p>If you do, share one of the many <Link href={"/coming_soon"}><a>Liquid Center articles</a></Link> with your friends and family to let them know that liquid democracy is the real deal, and their liquid representative will need their vote in the upcoming elections.</p>
+      <p>If you do, share one of the many <Link href={"/recent"}><a>Liquid Center articles</a></Link> with your friends and family to let them know that liquid democracy is the real deal, and their liquid representative will need their vote in the upcoming elections.</p>
 
       <p>If you don’t have a liquid representative in your district, reach out to your existing lawmaker (or prospective candidate) and ask them to adopt a liquid democracy platform such as Liquid Center.</p>
 
