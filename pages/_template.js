@@ -24,6 +24,7 @@ export default () => (
       <p></p>
 
       <Link href={"/coming_soon"}><a>this is a link</a></Link>
+      <a href="https://liquify.us" target="_blank" rel="noopener noreferrer">Liquify</a>
 
       <Section>Expiration Dates</Section>
       <p></p>

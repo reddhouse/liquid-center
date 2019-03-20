@@ -26,7 +26,7 @@ export default () => (
             m="/static/m-flagwall.jpg"
             l="/static/l-flagwall.jpg"
             summaryTitle="Liquid Democracy in 60 Seconds"
-            summaryBlurb="Liquid democracy is a new way for citizens to participate in the lawmaking process, and exercise control over their government."
+            summaryBlurb="Liquid democracy is a new way for citizens to participate in the lawmaking process, and to take control of their government."
             endpoint="/liquid_democracy"
           />
           <Card2
@@ -51,9 +51,9 @@ export default () => (
           s="/static/s-tide.jpg"
           m="/static/m-tide.jpg"
           l="/static/l-tide.jpg"
-          summaryTitle="Liquid Democracy Requires Technology - Introducing Liquify & in.dividual"
+          summaryTitle="Liquid Technology | Introducing Liquify + in.dividual Identity"
           summaryBlurb="This is an article summary. You should definitely read this."
-          endpoint="/coming_soon"
+          endpoint="/liquid_technology"
         />
       </Featured>
 
