@@ -80,9 +80,9 @@ const StyledImage = styled.img`
 
 const SummaryContainer = styled.div`
   flex: 1 1 auto;
-  min-width: 300px;
-  max-width: 300px;
-  padding: 20px;
+  min-width: 280px;
+  max-width: 280px;
+  padding: 30px;
   border-radius: 0px 5px 5px 0px;
   ${props => props.theme.media.tablet`
     flex: 1 1 auto;

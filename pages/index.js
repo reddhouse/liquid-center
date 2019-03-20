@@ -30,9 +30,9 @@ export default () => (
             endpoint="/liquid_democracy"
           />
           <Card2
-            s="/static/s-hoops.jpg"
-            m="/static/m-hoops.jpg"
-            l="/static/l-hoops.jpg"
+            s="/static/s-sunsetboat.jpg"
+            m="/static/m-sunsetboat.jpg"
+            l="/static/l-sunsetboat.jpg"
             summaryTitle="Laws With Expiration Dates"
             summaryBlurb="Designing laws that self-destruct can yield amazing benefits, but special planning is required."
             endpoint="/expiration_dates"
@@ -52,7 +52,7 @@ export default () => (
           m="/static/m-tide.jpg"
           l="/static/l-tide.jpg"
           summaryTitle="Liquid Technology | Introducing Liquify + in.dividual Identity"
-          summaryBlurb="This is an article summary. You should definitely read this."
+          summaryBlurb="Liquid Center's flagship application and authentication service."
           endpoint="/liquid_technology"
         />
       </Featured>

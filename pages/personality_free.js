@@ -50,8 +50,8 @@ export default () => (
           <Author>Justin Tuttle</Author>
         </div>
         <PhotoCredit
-          author="Element5 Digital"
-          link="https://unsplash.com/@element5digital?utm_medium=referral&amp;utm_campaign=photographer-credit&amp;utm_content=creditBadge"
+          author="Roi Dimor"
+          link="https://unsplash.com/@roi_dimor?utm_medium=referral&amp;utm_campaign=photographer-credit&amp;utm_content=creditBadge"
         />
       </CreditsContainer>
     </Container>

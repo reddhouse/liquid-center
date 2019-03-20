@@ -11,9 +11,9 @@ export default () => (
     titleLine1="Making laws with expiration dates."
     titleLine2=""
     metaBlurb="Designing laws that self-destruct can yield amazing benefits, but special planning is required."
-    s="/static/s-hoops.jpg"
-    m="/static/m-hoops.jpg"
-    l="/static/l-hoops.jpg"
+    s="/static/s-sunsetboat.jpg"
+    m="/static/m-sunsetboat.jpg"
+    l="/static/l-sunsetboat.jpg"
   >
     <Container>
       <div><FirstWord>Liquid</FirstWord> democracy allows voters (not their representatives) to decide if/when individual bills should be made into law. This can be an intimidating task, especially for citizens who don't have a lot of time to research public policy issues.</div>
@@ -55,9 +55,13 @@ export default () => (
           <MiniBold>Written By:</MiniBold>
           <Author>Justin Tuttle</Author>
         </div>
+        {/* <PhotoCredit
+          author="Vinit Pathak"
+          link="https://unsplash.com/@vinitpathak26?utm_medium=referral&amp;utm_campaign=photographer-credit&amp;utm_content=creditBadge"
+        /> */}
         <PhotoCredit
-          author="Element5 Digital"
-          link="https://unsplash.com/@element5digital?utm_medium=referral&amp;utm_campaign=photographer-credit&amp;utm_content=creditBadge"
+          author="Steinar Engeland"
+          link="https://unsplash.com/@steinart?utm_medium=referral&amp;utm_campaign=photographer-credit&amp;utm_content=creditBadge"
         />
       </CreditsContainer>
     </Container>

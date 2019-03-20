@@ -72,7 +72,7 @@ const StyledImage = styled.img`
 
 const SummaryContainer = styled.div`
   flex: 1 1 auto;
-  padding: 20px;
+  padding: 30px;
   border-radius: 0px 0px 5px 5px;
   background-color: white;
 `
