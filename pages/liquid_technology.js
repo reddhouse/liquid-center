@@ -18,7 +18,7 @@ export default () => (
     <Container>
       <p><FirstWord>Liquid Center</FirstWord> is a resource for voters and congressional representatives to learn about, and implement liquid democracy - a new way for citizens to take control of the legislative process.</p>
 
-      <p>If you’re not familiar with liquid democracy, you might enjoy reading our <Link href={"/liquid_democracy"}><a>60-second overview</a></Link>, or a longer explanation of why <Link href={"/fastest_fix"}><a>fixing the legislatiive process</a></Link> is so important.</p>
+      <p>If you’re not familiar with liquid democracy, you might enjoy reading our <Link href={"/liquid_democracy"}><a>60-second overview</a></Link>, or a longer explanation of why <Link href={"/fastest_fix"}><a>fixing the legislative process</a></Link> is so important.</p>
 
       <p>Liquid democracy can be implemented immediately, without any existing laws being changed, but it does require that we use technology to solve two main challenges:</p>
 
