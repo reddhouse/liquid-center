@@ -4,35 +4,39 @@ import Link from 'next/link'
 import PostLayout from '../components/PostLayout'
 import PhotoCredit from '../components/PhotoCredit'
 
-export default () => (
-  <PostLayout
-    metaTitle="Liquid Center | Coming Soon"
-    published=""
-    titleLine1="Coming Soon"
-    titleLine2=""
-    metaBlurb=""
-    s="/static/s-lemur.jpg"
-    m="/static/m-lemur.jpg"
-    l="/static/l-lemur.jpg"
-  >
-    <Container>
-      <p><FirstWord>So</FirstWord> many articles to write, so little time...</p>
+export default () => {
+  const dateOptions = {year: 'numeric', month: 'long', day: 'numeric' }
+  const now = new Date()
 
-      <p>Please check back in a few days.</p>
+  return (
+    <PostLayout
+      metaTitle="Liquid Center | Coming Soon"
+      published={now.toLocaleDateString("en-US", dateOptions)}
+      titleLine1="Coming Soon"
+      titleLine2=""
+      metaBlurb=""
+      s="/static/s-header.jpg"
+      m="/static/m-header.jpg"
+      l="/static/l-header.jpg"
+    >
+      <Container>
+        <p><FirstWord>Sorry</FirstWord>, the article or feature you're seeking is not quite ready.</p>
+        <p>Please check back later.</p>
 
-      <CreditsContainer>
-        <div>
-          <MiniBold>Written By:</MiniBold>
-          <Author>Justin Tuttle</Author>
-        </div>
-        <PhotoCredit
-          author="Roi Dimor"
-          link="https://unsplash.com/@roi_dimor?utm_medium=referral&amp;utm_campaign=photographer-credit&amp;utm_content=creditBadge"
-        />
-      </CreditsContainer>
-    </Container>
-  </PostLayout>
-)
+        <CreditsContainer>
+          <div>
+            <MiniBold>Excuse Maker:</MiniBold>
+            <Author>Justin Tuttle</Author>
+          </div>
+          <PhotoCredit
+            author="Nkululeko Jonas"
+            link="https://unsplash.com/@nkululekojonas?utm_medium=referral&amp;utm_campaign=photographer-credit&amp;utm_content=creditBadge"
+          />
+        </CreditsContainer>
+      </Container>
+    </PostLayout>
+  )
+}
 
 /***************************** Styled Components *****************************/
 
