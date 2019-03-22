@@ -7,7 +7,7 @@ import PhotoCredit from '../components/PhotoCredit'
 export default () => (
   <PostLayout
     metaTitle="Liquid Center | Politicians Without Personalities"
-    published="March 15, 2019"
+    published="March 17, 2019"
     titleLine1="Politicians Without Personalities"
     titleLine2=""
     metaBlurb="Why it's probably a good thing if you don't know your representatives name."

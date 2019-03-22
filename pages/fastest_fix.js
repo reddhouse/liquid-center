@@ -7,7 +7,7 @@ import PhotoCredit from '../components/PhotoCredit'
 export default () => (
   <PostLayout
     metaTitle="Liquid Center | The Fastest Way to Fix Everything"
-    published="March 10, 2019"
+    published="March 20, 2019"
     titleLine1="The Fastest Way to Fix Everything"
     titleLine2=""
     metaBlurb="Why our lawmaking process matters, and how liquid democracy provides a much needed upgrade."
@@ -76,7 +76,7 @@ export default () => (
 
       <p>You can also consider running for office yourself! Liquid politics are <Link href={"/coming_soon"}><a>definitely NOT politics as usual</a></Link>, and you or your friends or family members might be persuaded by the <Link href={"/coming_soon"}><a>$348,000 (2-year) Challenge</a></Link>.</p>
 
-      <p>If you're interested in learning more about Liquid Center, and the enhancements we make to liquid democracy, <Link href={"/about"}><a> click here</a></Link>, and be sure to subscribe to Liquid Center below to keep track of our progress.</p>
+      <p>If you're interested in learning more about Liquid Center, <Link href={"/about"}><a> click here</a></Link>, and be sure to subscribe below to keep track of our progress.</p>
 
       <CreditsContainer>
         <div>

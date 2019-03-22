@@ -7,7 +7,7 @@ import PhotoCredit from '../components/PhotoCredit'
 export default () => (
   <PostLayout
     metaTitle="Liquid Center | Laws with Expiration Dates"
-    published="March 7, 2019"
+    published="March 18, 2019"
     titleLine1="Making laws with expiration dates."
     titleLine2=""
     metaBlurb="Designing laws that self-destruct can yield amazing benefits, but special planning is required."

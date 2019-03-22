@@ -20,7 +20,7 @@ export default () => (
       </BlurEffect>
       <ContentContainer>
         <Content>
-          <Section>About Us</Section>
+          <PageTitle>About Us</PageTitle>
           <p>Liquid Center is a not-for-profit organization (soon-to-be) registered in Washington State, with <Link href={"/coming_soon"}><a>employees</a></Link>, <Link href={"/coming_soon"}><a>volunteers</a></Link>, and <Link href={"/coming_soon"}><a>affiliated representatives</a></Link> contributing remotely from small towns and big cities across America.</p>
           <p><b>Our Objectives</b></p>
           <Indented>
@@ -33,7 +33,7 @@ export default () => (
             <p>By continually striving to remain impartial and transparent, we hope Liquid Center can be a place of refuge from divisive forces.</p>
             <p>Liquid democracy automatically removes self-interested influencers from the lawmaking process, and Liquid Center’s <Link href={"/liquid_technology"}><a>Liquid Agenda</a></Link> offers clear and objective proof that we do have shared values, and that the sky is the limit to what we can achieve together.</p>
           </Indented>
-          <p>If you're interested volunteering, or simply having a conversation about our objectives or approach, we'd love to hear from you. Click <Link href={"/coming_soon"}><a>here</a></Link> for our contact information.</p>
+          <p>If you're interested in volunteering, or simply having a conversation about our objectives or approach, we'd love to hear from you. Click <Link href={"/coming_soon"}><a>here</a></Link> for our contact information.</p>
           <CreditsContainer>
             <PhotoCredit
               author="Nkululeko Jonas"
@@ -105,6 +105,7 @@ const ContentContainer = styled.div`
   max-width: 1040px;
   align-self: center;
   background-color: transparent;
+  
   font-family: Georgia, serif;
   font-size: 1.25em;
   ${props => props.theme.media.tablet`font-size: 1.2em;`}
@@ -130,7 +131,7 @@ const Content = styled.div`
   background-color: white;
 `
 
-const Section = styled.div`
+const PageTitle = styled.div`
   font-size: 1.5em;
   margin-bottom: 40px;
   ${props => props.theme.media.phone`

@@ -7,7 +7,7 @@ import PhotoCredit from '../components/PhotoCredit'
 export default () => (
   <PostLayout
     metaTitle="Liquid Center | Introducing Liquify + in.dividual Identity"
-    published="March 20, 2019"
+    published="March 16, 2019"
     titleLine1="Introducing Liquify + in.dividual Identity"
     titleLine2=""
     metaBlurb="Technology for liquid democracy. Introducing Liquify and in.dividual identity."

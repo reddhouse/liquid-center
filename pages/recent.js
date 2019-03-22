@@ -7,23 +7,52 @@ import Header from '../components/Header'
 import Footer from '../components/Footer'
 
 const posts = [
-  { title: "Introducing Liquify - A Blog Post 1", href: "/coming_soon" },
-  { title: "Introducing Liquify - A Blog Post 2", href: "/coming_soon" },
-  { title: "Introducing Liquify - A Blog Post 3", href: "/coming_soon" },
-  { title: "Introducing Liquify - A Blog Post 4", href: "/coming_soon" },
-  { title: "Introducing Liquify - A Blog Post 5", href: "/coming_soon" },
-  { title: "Introducing Liquify - A Blog Post 6", href: "/coming_soon" },
-  { title: "Introducing Liquify - A Blog Post 7", href: "/coming_soon" },
-  { title: "Introducing Liquify - A Blog Post 8", href: "/coming_soon" },
-  { title: "Introducing Liquify - A Blog Post 9", href: "/coming_soon" },
-  { title: "Introducing Liquify - A Blog Post 10", href: "/coming_soon" }
+  {
+    title: "The Fastest Way to Fix Everything",
+    blurb: "Why our lawmaking process matters, and how liquid democracy provides a much needed upgrade.",
+    date: "March 20, 2019",
+    href: "/fastest_fix"
+  },
+  {
+    title: "Liquid Democracy in 60 Seconds",
+    blurb: "Liquid democracy is a new way for citizens to participate in the lawmaking process, and to take control of their government.",
+    date: "March 19, 2019",
+    href: "/liquid_democracy"
+  },
+  {
+    title: "Laws With Expiration Dates",
+    blurb: "Designing laws that self-destruct can yield amazing benefits, but special planning is required.",
+    date: "March 18, 2019",
+    href: "/expiration_dates"
+  },
+  {
+    title: "Politicians Without Personalities",
+    blurb: "Why it's probably a good thing if you don't know your representatives' names.",
+    date: "March 17, 2019",
+    href: "/personality_free"
+  },
+  {
+    title: "Liquid Technology5 | Introducing Liquify + in.dividual Identity",
+    blurb: "Liquid Center's flagship application and authentication service.",
+    date: "March 16, 2019",
+    href: "/liquid_technology"
+  }
 ]
 
-const renderRows = () => posts.map((post) => (
+const sortedPosts = posts.sort((a, b) => {
+  a = new Date(a.date)
+  b = new Date(b.date)
+  return a>b ? -1 : a<b ? 1 : 0
+})
+
+const renderRows = () => sortedPosts.map((post) => (
   <PostDetailRow key={post.title}>
-    <Link href={post.href}>
-      <a>{post.title}</a>
+    <Published>{post.date}</Published>
+    <Link href={post.href} passHref>
+      <TitleAnchor>{post.title}</TitleAnchor>
     </Link>
+    <Blurb>{post.blurb}</Blurb>
+    <hr />
   </PostDetailRow>
 ))
 
@@ -40,8 +69,10 @@ export default () => (
       </BlurEffect>
       <ContentContainer>
         <Content>
-          <div>Recent posts page. List of posts goes here.</div>
-          <br />
+
+          <PageTitle>All Posts</PageTitle>
+          <PageSubTitle>Recently updated, first:</PageSubTitle>
+
           { renderRows() }
 
         </Content>
@@ -109,6 +140,12 @@ const ContentContainer = styled.div`
   max-width: 1040px;
   align-self: center;
   background-color: transparent;
+
+  font-family: Georgia, serif;
+  font-size: 1.25em;
+  ${props => props.theme.media.tablet`font-size: 1.2em;`}
+  ${props => props.theme.media.phone`font-size: 1.1em;`}
+  line-height: 1.6em;
 `
 
 const Content = styled.div`
@@ -129,6 +166,42 @@ const Content = styled.div`
   background-color: white;
 `
 
+const PageTitle = styled.div`
+  font-size: 1.5em;
+  margin-bottom: 4px;
+  ${props => props.theme.media.phone`
+    font-size: 1.1em;
+    margin-bottom: 0;
+  `}
+  font-weight: bold;
+`
+
+const PageSubTitle = styled.div`
+  font-size: 1.1em;
+  margin-bottom: 40px;
+  ${props => props.theme.media.phone`
+    font-size: 1em;
+    margin-bottom: 20px;
+  `}
+  font-weight: bold;
+`
+
 const PostDetailRow = styled.div`
 
+`
+
+const Published = styled.div`
+  margin-bottom: 10px;
+  font-size: 0.9em;
+  color: ${props => props.theme.color11};
+`
+
+const TitleAnchor = styled.a`
+  font-size: 1.25em;
+  text-decoration: none;
+`
+
+const Blurb = styled.div`
+  margin-top: 10px;
+  margin-bottom: 30px;
 `
