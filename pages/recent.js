@@ -32,7 +32,7 @@ const posts = [
     href: "/personality_free"
   },
   {
-    title: "Liquid Technology5 | Introducing Liquify + in.dividual Identity",
+    title: "Liquid Technology | Introducing Liquify + in.dividual Identity",
     blurb: "Liquid Center's flagship application and authentication service.",
     date: "March 16, 2019",
     href: "/liquid_technology"
