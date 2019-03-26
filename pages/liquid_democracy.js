@@ -28,7 +28,7 @@ export default () => (
 
       <p><b>-</b> Voters download an app, such as <a href="https://liquify.us" target="_blank" rel="noopener noreferrer">Liquify</a>, to make their preferences known to their representative, and to collectively determine what problems congress should be focused on fixing.</p>
 
-      <p><b>-</b> Representatives use a version of the same app to tally votes from constituents in their district. When voters indicate YES, on a particular bill/initiative, their representative will vote YES in congress, to turn it into a law.</p>
+      <p><b>-</b> Representatives use a version of the same app to tally votes from constituents in their district. When voters indicate YES on a particular bill/initiative, their representative will vote YES in congress, to turn it into a law.</p>
 
       <p><b>-</b> Voters can delegate their votes to any other citizen of their choosing when they are too busy, uninterested, or uninformed about a particular policy issue.</p>
 

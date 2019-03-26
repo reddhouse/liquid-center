@@ -16,11 +16,11 @@ export default () => (
     l="/static/l-lemur.jpg"
   >
     <Container>
-      <p><FirstWord>Liquid</FirstWord> democracy allows those who are interested, to play a more active role in collective problem solving (aka lawmaking). It also has the unique effect of promoting candidates who might, on the surface, seem a little boring. In this article, we'll discuss why politicians without personalities make great representatives.</p>
+      <p><FirstWord>Liquid</FirstWord> democracy allows those who are interested, to play a more active role in collective problem solving (aka lawmaking). It also has the unique effect of attracting candidates who break the mold in terms of "political personalities". As it happens, politicians without personalities make fantastic representatives.</p>
 
       <Section>Brands are Expensive</Section>
 
-      <p>"No personalities" is a bit of stretch. The wonderful group of representatives who have pledged to embrace the Liquid Center platform are obviously intelligent, charismatic folks. Many even have quite charming personalities, but on the job, you might mistake them for robots. They serve to advance no agendas, except those which are <Link href={"/liquid_democracy"}><a>directly communicated by individual voters</a></Link>, and it's perfectly okay to forget their name after election day.</p>
+      <p>"Without personalities" is of course, a bit of a stretch. The wonderful group of representatives who have pledged to embrace the Liquid Center platform are intelligent, charismatic folks. Many even have quite charming personalities, but on the job, you might mistake them for robots. They serve to advance no agendas, except those which are <Link href={"/liquid_democracy"}><a>directly communicated by individual voters</a></Link>, and it's perfectly okay to forget their name after election day.</p>
 
       <p>Contrast that to the politicians you can name off the top of your head. Likely, they fought long and hard to earn the name recognition, but with today's (non-liquid) lawmakers spending as much as 70% of their time fundraising, it makes you wonder if too much time is being devoted to brand promotion.</p>
 
@@ -40,7 +40,7 @@ export default () => (
 
       <p>Your representative is not an actor or salesperson. Politicians who serve in executive roles may still need to leverage strong personalities to lead their employees or departments, but representatives simply need to represent.</p>
 
-      <p>Luckily, there a growing number of lawmakers who have pledged to set aside their personal preferences and agendas in order to prioritize what the American people want accomplished, and to vote <i>exactly</i> as their constituents indicate on each and every law that comes across their desk.</p>
+      <p>Luckily, there a growing number of lawmakers who have pledged to set aside their personal preferences and agendas in order to prioritize what the American people want accomplished, and to vote <i>exactly</i> as their constituents indicate on each and every bill that comes across their desk.</p>
 
       <p>If liquid democracy is a new concept to you, please take a moment to read why we think it's <Link href={"/fastest_fix"}><a>the fastest way to fix everything</a></Link>. You can also learn about Liquid Center's mission to promote and enhance liquid democracy on our <Link href={"/about"}><a>about us</a></Link> page.</p>
 
