@@ -8,7 +8,9 @@ export default () => (
     <NavContainer>
       <NavBar>
         <NavFakeMargin />
-        <Title>Liquid Center</Title>
+        <Link href="/" passHref>
+          <Title>Liquid Center</Title>
+        </Link>
         <NavItem>
           <Link href="/" passHref>
             <Anchor>Home</Anchor>
@@ -75,7 +77,8 @@ const Title = styled.div`
 `
 
 const NavItem = styled.div`
-  margin-right: 10px;
+  margin-right: 16px;
+  ${props => props.theme.media.phone`margin-right: 10px;`}
 `
 
 const Anchor = styled.a`

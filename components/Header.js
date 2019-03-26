@@ -171,6 +171,7 @@ const StyledButton = styled.div`
   border-radius: 10px;
   line-height: 1em;
   color: white;
+  cursor: pointer;
 `
 
 // Mirror the margin used in Card1 as displayed in index.js
@@ -184,7 +185,8 @@ const NavFakeMargin = styled.div`
 `
 
 const NavItem1 = styled.div`
-  margin-right: 10px;
+  margin-right: 16px;
+  ${props => props.theme.media.phone`margin-right: 10px;`}
 `
 
 const NavItem2 = styled.div`

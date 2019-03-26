@@ -126,4 +126,5 @@ const StyledButton = styled.button`
   border: none;
   border-radius: 8px;
   background-color:#29a0e0;
+  cursor: pointer;
 `

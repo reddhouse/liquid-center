@@ -66,7 +66,8 @@ const FlexFiller = styled.div`
 `
 
 const NavItem = styled.div`
-  margin-right: 10px;
+  margin-right: 16px;
+  ${props => props.theme.media.phone`margin-right: 10px;`}
 `
 
 const Anchor = styled.a`
