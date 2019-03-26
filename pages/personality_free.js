@@ -16,7 +16,7 @@ export default () => (
     l="/static/l-lemur.jpg"
   >
     <Container>
-      <p><FirstWord>Liquid</FirstWord> democracy allows those who are interested, to play a more active role in collective problem solving (aka lawmaking). It also has the unique effect of attracting candidates who break the mold in terms of "political personalities". As it happens, politicians without personalities make fantastic representatives.</p>
+      <p><FirstWord>Liquid</FirstWord> democracy allows those who are interested, to play a more active role in collective problem solving (aka lawmaking). It also has the unique effect of promoting candidates who might, on the surface, seem a little uninteresting. In this article, we'll discuss why politicians without personalities make fantastic representatives.</p>
 
       <Section>Brands are Expensive</Section>
 
