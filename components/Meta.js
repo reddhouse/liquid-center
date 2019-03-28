@@ -9,15 +9,6 @@ export default (props) => (
       <meta name="description" content={props.description} />
       <title>{props.title}</title>
       <link rel="icon" type="image/x-icon" href="../static/favicon.ico" />
-      <!-- Global site tag (gtag.js) - Google Analytics -->
-      <script async src="https://www.googletagmanager.com/gtag/js?id=UA-137145905-1"></script>
-      <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag(){dataLayer.push(arguments);}
-        gtag('js', new Date());
-        gtag('config', 'UA-137145905-1');
-      </script>
-
     </Head>
     <style jsx global>
       {`
