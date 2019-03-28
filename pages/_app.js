@@ -1,6 +1,9 @@
 import React from 'react'
 import App, { Container } from 'next/app'
+import Router from 'next/router'
 import styled, { ThemeProvider, css } from 'styled-components'
+
+Router.events.on('routeChangeComplete', url => gtag.pageview(url))
 
 class MyApp extends App {
   static async getInitialProps({ Component, ctx }) {
