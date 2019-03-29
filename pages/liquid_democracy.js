@@ -18,7 +18,7 @@ export default () => (
     <Container>
       <p><FirstWord>Liquid</FirstWord> democracy is a new way for citizens to participate in the lawmaking process, and to take control of their government.</p>
 
-      <p>Instead of giving representative lawmakers free reign to do what they please between elections, <b>liquid democracy allows the public to set the legislative agenda in congress, and decide which individual bills/initiatives should become law.</b></p>
+      <p>Instead of giving representative lawmakers free reign to do what they please between elections, <b>liquid democracy allows the public to set the legislative agenda in Congress, and decide which individual bills/initiatives should become law.</b></p>
 
       <p>Liquid democracy is an upgrade to our existing system of representative democracy, but requires no existing laws to be changed, and can be implemented immediately.</p>
 
@@ -26,7 +26,7 @@ export default () => (
 
       <p><b>-</b> Voters elect a new, liquid representative, or ask their current lawmaker to convert to a liquid democracy platform such as Liquid Center.</p>
 
-      <p><b>-</b> Voters download an app, such as <a href="https://liquify.us" target="_blank" rel="noopener noreferrer">Liquify</a>, to make their preferences known to their representative, and to collectively determine what problems congress should be focused on fixing.</p>
+      <p><b>-</b> Voters download an app, such as <a href="https://liquify.us" target="_blank" rel="noopener noreferrer">Liquify</a>, to make their preferences known to their representative, and to collectively determine what problems congress should be focused on fixing (in order of priority).</p>
 
       <p><b>-</b> Representatives use a version of the same app to tally votes from constituents in their district. When voters indicate YES on a particular bill/initiative, their representative will vote YES in congress, to turn it into a law.</p>
 

@@ -59,7 +59,7 @@ const renderRows = () => sortedPosts.map((post) => (
 export default () => (
   <React.Fragment>
 
-    <Meta title="Liquid Center | Recent" />
+    <Meta title="Liquid Center | Recent" description="Recent articles on liquid democracy and collective problem solving."/>
 
     <Container>
       <Header />

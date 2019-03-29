@@ -25,9 +25,9 @@ export default () => (
       <Indented>
         <p><b>-</b> Voters elect a new, liquid Councilmember, or ask their current Councilmember to convert to a liquid democracy platform such as Liquid Center.</p>
 
-        <p><b>-</b> Voters download an app, such as <a href="https://liquify.us" target="_blank" rel="noopener noreferrer">Liquify</a>, to make their preferences known to their Councilmember, and to collectively determine what problems the City Council should be focused on fixing.</p>
+        <p><b>-</b> Voters download an app, such as <a href="https://liquify.us" target="_blank" rel="noopener noreferrer">Liquify</a>, to make their preferences known to their Councilmember, and to collectively determine what problems the City Council should be focused on fixing (in order of priority).</p>
 
-        <p><b>-</b> Councilmembers use a version of the same app to tally votes from constituents in their district. When voters indicate YES on a particular bill/initiative, their Councilmember will vote YES in Council, to turn it into a law.</p>
+        <p><b>-</b> Councilmembers use a version of the same app to tally votes from constituents in their district. When voters indicate YES on a particular bill/initiative, their Councilmember will vote YES in Council, to turn it into law.</p>
 
         <p><b>-</b> Voters can delegate their votes to any other citizen of their choosing when they are too busy, uninterested, or uninformed about a particular policy issue.</p>
       </Indented>

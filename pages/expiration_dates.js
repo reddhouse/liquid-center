@@ -8,7 +8,7 @@ export default () => (
   <PostLayout
     metaTitle="Liquid Center | Laws with Expiration Dates"
     published="March 18, 2019"
-    titleLine1="Making laws with expiration dates."
+    titleLine1="Laws with Expiration Dates"
     titleLine2=""
     metaBlurb="Designing laws that self-destruct can yield amazing benefits, but special planning is required."
     s="/static/s-sunsetboat.jpg"

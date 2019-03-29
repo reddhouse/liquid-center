@@ -23,6 +23,7 @@ export default class MyDocument extends Document {
     }
   }
 
+  // https://github.com/zeit/next.js/tree/canary/examples/with-google-analytics
   render() {
     return (
       <html lang="en">

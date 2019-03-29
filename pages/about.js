@@ -10,7 +10,7 @@ import PhotoCredit from '../components/PhotoCredit'
 export default () => (
   <React.Fragment>
 
-    <Meta title="Liquid Center | About" />
+    <Meta title="Liquid Center | About" description="Providing technology and educational resources for the advancement of liquid democracy."/>
 
     <Container>
       <Header />
@@ -105,7 +105,7 @@ const ContentContainer = styled.div`
   max-width: 1040px;
   align-self: center;
   background-color: transparent;
-  
+
   font-family: Georgia, serif;
   font-size: 1.25em;
   ${props => props.theme.media.tablet`font-size: 1.2em;`}
