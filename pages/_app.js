@@ -2,6 +2,7 @@ import React from 'react'
 import App, { Container } from 'next/app'
 import Router from 'next/router'
 import styled, { ThemeProvider, css } from 'styled-components'
+import * as gtag from '../lib/gtag'
 
 Router.events.on('routeChangeComplete', (url) => {
   window.scrollTo(0, 0)
