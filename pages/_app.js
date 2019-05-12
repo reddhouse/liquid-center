@@ -3,7 +3,10 @@ import App, { Container } from 'next/app'
 import Router from 'next/router'
 import styled, { ThemeProvider, css } from 'styled-components'
 
-Router.events.on('routeChangeComplete', url => gtag.pageview(url))
+Router.events.on('routeChangeComplete', (url) => {
+  window.scrollTo(0, 0)
+  return gtag.pageview(url)
+})
 
 class MyApp extends App {
   static async getInitialProps({ Component, ctx }) {
