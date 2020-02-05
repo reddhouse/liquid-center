@@ -7,7 +7,7 @@ export default () => (
     <NavBar>
 
       <NavFakeMargin />
-      <div>Liquid Center ©&nbsp;2019</div>
+      <div>Liquid Center ©&nbsp;2020</div>
       <FlexFiller />
 
       <NavItem>

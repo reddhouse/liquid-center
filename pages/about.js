@@ -29,7 +29,7 @@ export default () => (
           </Indented>
           <p><b>Our Opportunity</b></p>
           <Indented>
-            <p>Around the world, people are losing faith in democracy, and losing faith in one another, perhaps without realizing that very powerful entities are actively at work, creating an environment that undermines our trust, and encourages us to point fingers at one another.</p>
+            <p>Around the world, people are losing faith in democracy, and losing faith in one another. Many fail to realize that very powerful entities are actively at work creating an environment that undermines our trust, and encourages us to point fingers at one another.</p>
             <p>By continually striving to remain impartial and transparent, we hope Liquid Center can be a place of refuge from divisive forces.</p>
             <p>Liquid democracy automatically removes self-interested influencers from the lawmaking process, and Liquid Center’s <Link href={"/liquid_technology"}><a>Liquid Agenda</a></Link> offers clear and objective proof that we do have shared values, and that the sky is the limit to what we can achieve together.</p>
           </Indented>

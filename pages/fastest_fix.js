@@ -4,6 +4,8 @@ import Link from 'next/link'
 import PostLayout from '../components/PostLayout'
 import PhotoCredit from '../components/PhotoCredit'
 
+let thisYear = new Date().getFullYear()
+
 export default () => (
   <PostLayout
     metaTitle="Liquid Center | The Fastest Way to Fix Everything"
@@ -20,44 +22,42 @@ export default () => (
 
       <p><i>Collectively? I'll solve my own problems, thanks.</i></p>
 
-      <p>You may have heard the phrase "a rising tide lifts all boats", but in our ultra-connected, ultra-competitive economy it may be more apt to say "many sinking boats will destroy our harbor".</p>
+      <p>No, actually, you won't. In today's ultra-connected, ultra-competitive economy, you can run, but you can't hide from the institutional-level problems which threaten your wellbeing and security. Sticking your head in the sand is short-sighted, and securing a better future for yourself, means helping us all realize that vision together.</p>
 
-      <p>Today, we face institutional-level problems which threaten our way of life, and our wellbeing. Focusing on saving yourself is a short-sighted strategy, and the biggest problems we face, can't be solved individually anyway.</p>
-
-      <p>For example, say you needed a road from point A to point B, but you can’t afford to spend the next 25 years of your life pouring your own asphalt. Lucky for you, some of your neighbors also want to use this road, and there are three ways we could attempt to solve this problem en masse.</p>
+      <p>Let's pretend you needed to build a road from your home to your office, but you can’t afford to spend the next five years of your life pouring asphalt. Lucky for you, some of your neighbors would also benefit from using this road, and there are three ways we could attempt to solve this problem collectively.</p>
 
       <p>We could:</p>
 
       <Indented>
-        <div>1. All swing a pickaxes on Saturdays (pool our labor).</div>
-        <div>2. Contribute to the RoadzCo Kickstarter campaign (pool our money in a private enterprise).</div>
-        <div>3. Form the NRBA - National Road Building Administration (pool our money/tax dollars in a public enterprise).</div>
-        <br />
+        <div><b>1. Have everyone swing pickaxes on Saturday (pool our labor).</b></div>
+        <Indented>
+          <p>Not possible because of the immense cost and coordination effort required.</p>
+        </Indented>
+        <div><b>2. Contribute to the RoadzCo™ Kickstarter campaign (pool our money in a private enterprise).</b></div>
+        <Indented>
+          <p> Better, and much more common. However, this method can have some consequences, such as RoadzCo™ deciding it wants to demolish your house to make way for the road.</p>
+        </Indented>
+        <div><b>3. Form the NRBA - National Road Building Administration (pool our money/tax dollars in a public enterprise).</b></div>
+        <Indented>
+          <p>As it happens, the process of keeping RoadzCo™ from running rampant, is the same process that we would use to create and manage the NRBA. I’m referring of course to the lawmaking process, which is unfortunately in serious disrepair at the moment.</p>
+        </Indented>
       </Indented>
-
-      <Section>What's the Process?</Section>
-
-      <p>In the example above, the process for pooling our labor is exactly like it sounds, but this method is unrealistic because of logistical challenges.</p>
-
-      <p>The process of pooling money in a private enterprise is much more common, and the United States leads the world in terms of number of companies formed, and amount of productivity generated. However, this method can have some consequences, such as RoadzCo deciding it wants to bulldoze a new road through your back yard...</p>
-
-      <p>Which brings us to our last example; the National Road Building Administration. It turns out the process of keeping RoadzCo from running rampant, is the same process that we use to create and manage the NRBA. I’m referring of course to the lawmaking process, which happens to be in serious disrepair at the moment.</p>
 
       <Section>How is Lawmaking Broken?</Section>
 
-      <p>With a final reference to our trivial example, let’s pretend again that we’ve finished building roads, at least, it seems to the average citizen that we have plenty of them. However, a few folks are not too happy that road building is coming to an end.</p>
+      <p>Let’s pretend again that we’ve finished building all the roads we need. At least, it seems to the average citizen that we have plenty of them. However, a few folks are not too happy that road building is coming to an end.</p>
 
-      <p>RoadzCo has shareholders who have been getting rich from their initial investments, the National Road Building Administration has grown to a nice healthy 625,000 employees, and dozens of other related businesses like bulldozer manufacturers and line painters, stand to lose a lot of money.</p>
+      <p>RoadzCo™ has shareholders who have been getting rich from their initial investments, while the National Road Building Administration has grown to a nice healthy 625,000 employees. Meanwhile, dozens of other related businesses like bulldozer manufacturers and line painters, stand to lose a lot of money.</p>
 
       <p>When all of these groups decide to get together to convince congress to slow down the end of road building, they form an extremely powerful lobby.</p>
 
-      <p>This is the story of <b>special interests</b> vs. <b>the people's interests</b>, and it’s the main challenge we face with our lawmaking process in 2019. Special interests wield extreme influence in shaping not only the language/content of the actual policies we enact, but also the political parties, election district boundaries, and entire process of electing the people who ultimately end up drafting and passing new laws (or repealing terrible ones).</p>
+      <p>This is the story of <b>special interests</b> vs. <b>the people's interests</b>, and it’s the main challenge we face with our lawmaking process in {thisYear}. Special interests wield extreme influence in shaping not only the language/content of the actual policies we enact, but also the political parties, election district boundaries, and entire process of electing the people who ultimately end up drafting and passing new laws (or repealing terrible ones).</p>
 
       <Section>How Do We Fix It?</Section>
 
       <p>The fastest way to eliminate special interest influence in congress is to take control over both the congressional agenda, and the representatives who decide what becomes law, and what doesn’t.</p>
 
-      <p>More specifically, we need to elect lawmakers who run on a liquid democracy platform such as Liquid Center. You can read a quick summary of liquid democracy <Link href={"/liquid_democracy"}><a>here</a></Link>, but as it relates to fixing everything as fast as possible, this simply means:</p>
+      <p>More specifically, we need to elect lawmakers who run on a liquid democracy platform such as Liquid Center. You can read a quick summary of liquid democracy <Link href={"/liquid_democracy"}><a>here</a></Link>, but as it relates to fixing everything, this simply means:</p>
 
       <Indented>
         <p><b>-</b> Voters use an app to rank their priorities (controlling the agenda), and vote yes/no on every piece of legislation that comes across their representative’s desk (to decide what becomes law).</p>
@@ -70,7 +70,7 @@ export default () => (
 
       <p>Check to see if you have a liquid representative running for office <Link href={"/coming_soon"}><a>in your district</a></Link>.</p>
 
-      <p>If you do, share one of the many <Link href={"/recent"}><a>Liquid Center articles</a></Link> with your friends and family to let them know that liquid democracy is the real deal, and their liquid representative will need their vote in the upcoming elections.</p>
+      <p>If you do, share one of several <Link href={"/recent"}><a>Liquid Center articles</a></Link> with your friends and family to let them know that liquid democracy is the real deal, and their liquid representative will need their vote in the upcoming elections.</p>
 
       <p>If you don’t have a liquid representative in your district, reach out to your existing lawmaker (or prospective candidate) and ask them to adopt a liquid democracy platform such as Liquid Center.</p>
 

@@ -24,11 +24,9 @@ class MyApp extends App {
     const { Component, pageProps } = this.props
 
     return (
-      <Container>
-        <ThemeProvider theme={lcTheme}>
-          <Component {...pageProps} />
-        </ThemeProvider>
-      </Container>
+      <ThemeProvider theme={lcTheme}>
+        <Component {...pageProps} />
+      </ThemeProvider>
     )
   }
 }
